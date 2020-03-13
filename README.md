@@ -17,6 +17,7 @@ FOLDER - ADVPL\Projetos
   
 FOLDER - ADVPL\Exemplos\
    * **SPCORES.prw**: Fonte exemplo de uso das principais cores em componente SAY
+   * **SPDTEXT.prw**: Fonte exemplo para converter data em extenso
   
 FOLDER - ADVPL\Exemplos\Classes
   * **SPCLASSM.prw**: Fonte exemplo de uso da classe ClassMethArr
