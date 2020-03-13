@@ -15,6 +15,9 @@ FOLDER - ADVPL\Projetos
   * **SPEXPTABL.prw**: Fonte para exportar o dicionario de dados em HTML
   * **SPSLACK.prw**: Fonte para integrar o protheus ao slack
   
+FOLDER - ADVPL\Exemplos\
+   * **SPCORES.prw**: Fonte exemplo de uso das principais cores em componente SAY
+  
 FOLDER - ADVPL\Exemplos\Classes
   * **SPCLASSM.prw**: Fonte exemplo de uso da classe ClassMethArr
   
