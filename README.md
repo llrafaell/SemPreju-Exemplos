@@ -17,6 +17,9 @@ FOLDER - ADVPL\Projetos
   
 FOLDER - ADVPL\Exemplos\Classes
   * **SPCLASSM.prw**: Fonte exemplo de uso da classe ClassMethArr
+  
+FOLDER - ADVPL\Exemplos\WS
+  * **SPCliente.prw**: Fonte exemplo de Ws para listar o cadastro de cliente
 
 Tecnologia e Requisitos
 ----
