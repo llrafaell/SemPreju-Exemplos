@@ -19,6 +19,7 @@ FOLDER - ADVPL\Exemplos\
    * **SPCORES.prw**: Fonte exemplo de uso das principais cores em componente SAY.
    * **SPDTEXT.prw**: Fonte exemplo para converter data em extenso.
    * **SPDVALSQL.prw**: Fonte exemplo para validar se uma string SQL é valida.
+   * **SPPROGR.prw**: Fonte exemplo com diversas barras de progresso.
   
 FOLDER - ADVPL\Exemplos\Classes
   * **SPCLASSM.prw**: Fonte exemplo de uso da classe ClassMethArr
