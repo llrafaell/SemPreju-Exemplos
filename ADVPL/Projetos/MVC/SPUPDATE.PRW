@@ -297,7 +297,7 @@ If ( lOpen := MyOpenSm0(.T.) )
 			// Atualiza o dicionário SXB
 			//------------------------------------
 			oProcess:IncRegua1( "Dicionário de consultas padrão" + " - " + SM0->M0_CODIGO + " " + SM0->M0_NOME + " ..." )
-			//FSAtuSXB()
+			FSAtuSXB()
 
 			//------------------------------------
 			// Atualiza o dicionário SX9
@@ -608,10 +608,10 @@ Local nSeqAtu   := 0
 Local nTamSeek  := Len( SX3->X3_CAMPO )
 Local nTamFil 	:= TamSX3( "A1_FILIAL" )[1]
 Local cUsaFil	:= FsX3Info("A1_FILIAL",1)
-Local cUsaOBg	:= FsX3Info("A1_COD",1)
+Local cUsaOBg	:= FsX3Info("A1_CGC",1)
 Local cUsaCpo	:= FsX3Info("A1_BAIRRO",1)
 Local cResFil	:= FsX3Info("A1_FILIAL",2)
-Local cResObg	:= FsX3Info("A1_COD",2)
+Local cResObg	:= FsX3Info("A1_CGC",2)
 Local cResCpo	:= FsX3Info("A1_BAIRRO",2)
 
 AutoGrLog( "Ínicio da Atualização" + " SX3" + CRLF )
@@ -734,7 +734,7 @@ aAdd( aSX3, { ;
 aAdd( aSX3, { ;
 	{ 'ZRA'																	, .T. }, ; //X3_ARQUIVO
 	{ '03'																	, .T. }, ; //X3_ORDEM
-	{ 'ZRA_DESCRICAO'														, .T. }, ; //X3_CAMPO
+	{ 'ZRA_DESCRI'														, .T. }, ; //X3_CAMPO
 	{ 'C'																	, .T. }, ; //X3_TIPO
 	{ 50																	, .T. }, ; //X3_TAMANHO
 	{ 0																		, .T. }, ; //X3_DECIMAL
@@ -1077,6 +1077,7 @@ aAdd( aSX3, { ;
 	{ 'S'																	, .T. }, ; //X3_PYME
 	{ ''																	, .T. }} ) //X3_LOCALIZ
 
+
 aAdd( aSX3, { ;
 	{ 'ZRC'																	, .T. }, ; //X3_ARQUIVO
 	{ '02'																	, .T. }, ; //X3_ORDEM
@@ -1084,19 +1085,19 @@ aAdd( aSX3, { ;
 	{ 'C'																	, .T. }, ; //X3_TIPO
 	{ 6																		, .T. }, ; //X3_TAMANHO
 	{ 0																		, .T. }, ; //X3_DECIMAL
-	{ 'Codigo Grp.'																, .T. }, ; //X3_TITULO
-	{ 'Codigo Grp.'																, .T. }, ; //X3_TITSPA
-	{ 'Codigo Grp.'																, .T. }, ; //X3_TITENG
+	{ 'Codigo Grp.'															, .T. }, ; //X3_TITULO
+	{ 'Codigo Grp.'															, .T. }, ; //X3_TITSPA
+	{ 'Codigo Grp.'															, .T. }, ; //X3_TITENG
 	{ 'Cod. Grupo'															, .T. }, ; //X3_DESCRIC
 	{ 'Cod. Grupo'															, .T. }, ; //X3_DESCSPA
 	{ 'Cod. Grupo'															, .T. }, ; //X3_DESCENG
 	{ '@!'																	, .T. }, ; //X3_PICTURE
 	{ ''																	, .T. }, ; //X3_VALID
-	{ cUsaObg																, .T. }, ; //X3_USADO
+	{ cUsaCpo																, .T. }, ; //X3_USADO
 	{ ''																	, .T. }, ; //X3_RELACAO
 	{ ''																	, .T. }, ; //X3_F3
 	{ 0																		, .T. }, ; //X3_NIVEL
-	{ cResObg																, .T. }, ; //X3_RESERV
+	{ cResCpo																, .T. }, ; //X3_RESERV
 	{ ''																	, .T. }, ; //X3_CHECK
 	{ ''																	, .T. }, ; //X3_TRIGGER
 	{ 'U'																	, .T. }, ; //X3_PROPRI
@@ -1143,7 +1144,7 @@ aAdd( aSX3, { ;
 	{ ''																	, .T. }, ; //X3_VALID
 	{ cUsaObg																, .T. }, ; //X3_USADO
 	{ ''																	, .T. }, ; //X3_RELACAO
-	{ ''																	, .T. }, ; //X3_F3
+	{ 'ZRA'																	, .T. }, ; //X3_F3
 	{ 0																		, .T. }, ; //X3_NIVEL
 	{ cResObg																, .T. }, ; //X3_RESERV
 	{ ''																	, .T. }, ; //X3_CHECK
@@ -1177,7 +1178,7 @@ aAdd( aSX3, { ;
 aAdd( aSX3, { ;
 	{ 'ZRC'																	, .T. }, ; //X3_ARQUIVO
 	{ '04'																	, .T. }, ; //X3_ORDEM
-	{ 'ZRC_DESCRICAO'														, .T. }, ; //X3_CAMPO
+	{ 'ZRC_DESCRI'														, .T. }, ; //X3_CAMPO
 	{ 'C'																	, .T. }, ; //X3_TIPO
 	{ 50																	, .T. }, ; //X3_TAMANHO
 	{ 0																		, .T. }, ; //X3_DECIMAL
@@ -1190,7 +1191,7 @@ aAdd( aSX3, { ;
 	{ '@!'																	, .T. }, ; //X3_PICTURE
 	{ ''																	, .T. }, ; //X3_VALID
 	{ cUsaCpo					, .T. }, ; //X3_USADO
-	{ ''																	, .T. }, ; //X3_RELACAO
+	{ "", .T. }, ; //X3_RELACAO
 	{ ''																	, .T. }, ; //X3_F3
 	{ 0																		, .T. }, ; //X3_NIVEL
 	{ cResCpo												, .T. }, ; //X3_RESERV
@@ -1291,7 +1292,7 @@ aAdd( aSX3, { ;
 	{ ''																	, .T. }, ; //X3_VALID
 	{ cUsaObg																, .T. }, ; //X3_USADO
 	{ ''																	, .T. }, ; //X3_RELACAO
-	{ ''																	, .T. }, ; //X3_F3
+	{ 'ZRA'																	, .T. }, ; //X3_F3
 	{ 0																		, .T. }, ; //X3_NIVEL
 	{ cResObg																, .T. }, ; //X3_RESERV
 	{ ''																	, .T. }, ; //X3_CHECK
@@ -1565,10 +1566,10 @@ aAdd( aSIX, { ;
 aAdd( aSIX, { ;
 	'ZRC'																	, ; //INDICE
 	'1'																		, ; //ORDEM
-	'ZRC_FILIAL+ZRC_CODGRP+ZRC_CODZRA'										, ; //CHAVE
-	'Codigo + despesa/receita'												, ; //DESCRICAO
-	'Codigo + despesa/receita'												, ; //DESCSPA
-	'Codigo + despesa/receita'												, ; //DESCENG
+	'ZRC_FILIAL+ZRC_CODGRP'										, ; //CHAVE
+	'Codigo'												, ; //DESCRICAO
+	'Codigo'												, ; //DESCSPA
+	'Codigo'												, ; //DESCENG
 	'U'																		, ; //PROPRI
 	''																		, ; //F3
 	''																		, ; //NICKNAME
@@ -1969,22 +1970,22 @@ aEstrut := { "XB_ALIAS"  , "XB_TIPO"   , "XB_SEQ"    , "XB_COLUNA" , "XB_DESCRI"
 
 
 //
-// Consulta ZA0MVC
+// Consulta ZRA - Despesa ou receita
 //
 aAdd( aSXB, { ;
-	'ZA0MVC'																, ; //XB_ALIAS
+	'ZRA'																, ; //XB_ALIAS
 	'1'																		, ; //XB_TIPO
 	'01'																	, ; //XB_SEQ
 	'DB'																	, ; //XB_COLUNA
-	'Compositor'															, ; //XB_DESCRI
-	'Compositor'															, ; //XB_DESCSPA
-	'Compositor'															, ; //XB_DESCENG
+	'Despesa ou Receita  '															, ; //XB_DESCRI
+	'Despesa ou Receita  '															, ; //XB_DESCSPA
+	'Despesa ou Receita  '															, ; //XB_DESCENG
 	''																		, ; //XB_WCONTEM
-	'ZA0'																		, ; //XB_CONTEM
+	'ZRA'																		, ; //XB_CONTEM
 	''																	} ) //XB_LOCALIZ
 
 aAdd( aSXB, { ;
-	'ZA0MVC'																, ; //XB_ALIAS
+	'ZRA'																, ; //XB_ALIAS
 	'2'																		, ; //XB_TIPO
 	'01'																	, ; //XB_SEQ
 	'01'																	, ; //XB_COLUNA
@@ -1996,42 +1997,42 @@ aAdd( aSXB, { ;
 	''																	} ) //XB_LOCALIZ
 
 aAdd( aSXB, { ;
-	'ZA0MVC'																, ; //XB_ALIAS
-	'2'																		, ; //XB_TIPO
-	'02'																	, ; //XB_SEQ
-	'02'																	, ; //XB_COLUNA
-	'Nome'																	, ; //XB_DESCRI
-	'Nome'																	, ; //XB_DESCSPA
-	'Nome'																	, ; //XB_DESCENG
+	'ZRA'																, ; //XB_ALIAS
+	'3'																		, ; //XB_TIPO
+	'01'																	, ; //XB_SEQ
+	'01'																	, ; //XB_COLUNA
+	'Incluir'																, ; //XB_DESCRI
+	'Incluir'																, ; //XB_DESCSPA
+	'Incluir'																, ; //XB_DESCENG
 	''																		, ; //XB_WCONTEM
-	''																		, ; //XB_CONTEM
+	'01'																		, ; //XB_CONTEM
 	''																	} ) //XB_LOCALIZ
 
 aAdd( aSXB, { ;
-	'ZA0MVC'																, ; //XB_ALIAS
+	'ZRA'																, ; //XB_ALIAS
 	'4'																		, ; //XB_TIPO
 	'01'																	, ; //XB_SEQ
 	'01'																	, ; //XB_COLUNA
-	'Autor'																	, ; //XB_DESCRI
-	'Autor'																	, ; //XB_DESCSPA
-	'Autor'																	, ; //XB_DESCENG
+	'Codigo'																	, ; //XB_DESCRI
+	'Codigo'																	, ; //XB_DESCSPA
+	'Codigo'																	, ; //XB_DESCENG
 	''																		, ; //XB_WCONTEM
-	'ZA0_CODIGO'														, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-aAdd( aSXB, { ;
-	'ZA0MVC'																, ; //XB_ALIAS
-	'4'																		, ; //XB_TIPO
-	'01'																	, ; //XB_SEQ
-	'02'																	, ; //XB_COLUNA
-	'Nome'																	, ; //XB_DESCRI
-	'Nome'																	, ; //XB_DESCSPA
-	'Nome'																	, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	'ZA0_NOME'														, ; //XB_CONTEM
+	'ZRA_CODIGO'																		, ; //XB_CONTEM
 	''																	} ) //XB_LOCALIZ
 
 aAdd( aSXB, { ;
-	'ZA0MVC'																, ; //XB_ALIAS
+	'ZRA'																, ; //XB_ALIAS
+	'4'																		, ; //XB_TIPO
+	'01'																	, ; //XB_SEQ
+	'02'																	, ; //XB_COLUNA
+	'Descricao'																	, ; //XB_DESCRI
+	'Descricao'																	, ; //XB_DESCSPA
+	'Descricao'																	, ; //XB_DESCENG
+	''																		, ; //XB_WCONTEM
+	'ZRA_DESCRI'														, ; //XB_CONTEM
+	''																	} ) //XB_LOCALIZ
+aAdd( aSXB, { ;
+	'ZRA'																, ; //XB_ALIAS
 	'4'																		, ; //XB_TIPO
 	'01'																	, ; //XB_SEQ
 	'03'																	, ; //XB_COLUNA
@@ -2039,35 +2040,11 @@ aAdd( aSXB, { ;
 	'Tipo'																	, ; //XB_DESCSPA
 	'Tipo'																	, ; //XB_DESCENG
 	''																		, ; //XB_WCONTEM
-	'ZA0_TIPO'														, ; //XB_CONTEM
+	'ZRA_TIPO'														, ; //XB_CONTEM
 	''																	} ) //XB_LOCALIZ
 
 aAdd( aSXB, { ;
-	'ZA0MVC'																, ; //XB_ALIAS
-	'4'																		, ; //XB_TIPO
-	'02'																	, ; //XB_SEQ
-	'01'																	, ; //XB_COLUNA
-	'Nome'																	, ; //XB_DESCRI
-	'Nome'																	, ; //XB_DESCSPA
-	'Nome'																	, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	'ZA0_NOME'														, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-aAdd( aSXB, { ;
-	'ZA0MVC'																, ; //XB_ALIAS
-	'4'																		, ; //XB_TIPO
-	'02'																	, ; //XB_SEQ
-	'02'																	, ; //XB_COLUNA
-	'Autor'																	, ; //XB_DESCRI
-	'Autor'																	, ; //XB_DESCSPA
-	'Autor'																	, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	'ZA0_CODIGO'														, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-aAdd( aSXB, { ;
-	'ZA0MVC'																, ; //XB_ALIAS
+	'ZRA'																, ; //XB_ALIAS
 	'5'																		, ; //XB_TIPO
 	'01'																	, ; //XB_SEQ
 	''																		, ; //XB_COLUNA
@@ -2075,470 +2052,11 @@ aAdd( aSXB, { ;
 	''																		, ; //XB_DESCSPA
 	''																		, ; //XB_DESCENG
 	''																		, ; //XB_WCONTEM
-	'ZA0->ZA0_CODIGO'											, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-//
-// Consulta ZA1MVC
-//
-aAdd( aSXB, { ;
-	'ZA1MVC'																, ; //XB_ALIAS
-	'1'																		, ; //XB_TIPO
-	'01'																	, ; //XB_SEQ
-	'DB'																	, ; //XB_COLUNA
-	'Musicas'																, ; //XB_DESCRI
-	'Musicas'																, ; //XB_DESCSPA
-	'Musicas'																, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	'ZA1'																, ; //XB_CONTEM
+	'ZRA->ZRA_CODIGO'											, ; //XB_CONTEM
 	''																	} ) //XB_LOCALIZ
 
 aAdd( aSXB, { ;
-	'ZA1MVC'																, ; //XB_ALIAS
-	'2'																		, ; //XB_TIPO
-	'01'																	, ; //XB_SEQ
-	'01'																	, ; //XB_COLUNA
-	'Cod. Musica'															, ; //XB_DESCRI
-	'Cod. Musica'															, ; //XB_DESCSPA
-	'Cod. Musica'															, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	''																	, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-aAdd( aSXB, { ;
-	'ZA1MVC'																, ; //XB_ALIAS
-	'4'																		, ; //XB_TIPO
-	'01'																	, ; //XB_SEQ
-	'01'																	, ; //XB_COLUNA
-	'Cod. Musica'															, ; //XB_DESCRI
-	'Cod. Musica'															, ; //XB_DESCSPA
-	'Cod. Musica'															, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	'ZA1_MUSICA'														, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-aAdd( aSXB, { ;
-	'ZA1MVC'																, ; //XB_ALIAS
-	'4'																		, ; //XB_TIPO
-	'01'																	, ; //XB_SEQ
-	'02'																	, ; //XB_COLUNA
-	'Tit. musica'															, ; //XB_DESCRI
-	'Tit. musica'															, ; //XB_DESCSPA
-	'Tit. musica'															, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	'ZA1_TITULO'															, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-aAdd( aSXB, { ;
-	'ZA1MVC'																, ; //XB_ALIAS
-	'4'																		, ; //XB_TIPO
-	'01'																	, ; //XB_SEQ
-	'03'																	, ; //XB_COLUNA
-	'Dt.Criacao'															, ; //XB_DESCRI
-	'Dt.Criacao'															, ; //XB_DESCSPA
-	'Dt.Criacao'															, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	'ZA1_DATA'																, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-aAdd( aSXB, { ;
-	'ZA1MVC'																, ; //XB_ALIAS
-	'5'																		, ; //XB_TIPO
-	'01'																	, ; //XB_SEQ
-	''																		, ; //XB_COLUNA
-	''																		, ; //XB_DESCRI
-	''																		, ; //XB_DESCSPA
-	''																		, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	'ZA1->ZA1_MUSICA'													, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-//
-// Consulta ZB1MVC
-//
-aAdd( aSXB, { ;
-	'ZB1MVC'																, ; //XB_ALIAS
-	'1'																		, ; //XB_TIPO
-	'01'																	, ; //XB_SEQ
-	'DB'																	, ; //XB_COLUNA
-	'Turma'																	, ; //XB_DESCRI
-	'Turma'																	, ; //XB_DESCSPA
-	'Turma'																	, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	'ZB1'																, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-aAdd( aSXB, { ;
-	'ZB1MVC'																, ; //XB_ALIAS
-	'2'																		, ; //XB_TIPO
-	'01'																	, ; //XB_SEQ
-	'01'																	, ; //XB_COLUNA
-	'Codigo'																, ; //XB_DESCRI
-	'Codigo'																, ; //XB_DESCSPA
-	'Codigo'																, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	''																	, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-aAdd( aSXB, { ;
-	'ZB1MVC'																, ; //XB_ALIAS
-	'2'																		, ; //XB_TIPO
-	'02'																	, ; //XB_SEQ
-	'02'																	, ; //XB_COLUNA
-	'Descricao'																, ; //XB_DESCRI
-	'Descricao'																, ; //XB_DESCSPA
-	'Descricao'																, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	''																	, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-aAdd( aSXB, { ;
-	'ZB1MVC'																, ; //XB_ALIAS
-	'4'																		, ; //XB_TIPO
-	'01'																	, ; //XB_SEQ
-	'01'																	, ; //XB_COLUNA
-	'Codigo'																, ; //XB_DESCRI
-	'Codigo'																, ; //XB_DESCSPA
-	'Codigo'																, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	'ZB1_CODIGO'														, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-aAdd( aSXB, { ;
-	'ZB1MVC'																, ; //XB_ALIAS
-	'4'																		, ; //XB_TIPO
-	'01'																	, ; //XB_SEQ
-	'02'																	, ; //XB_COLUNA
-	'Descricao'																, ; //XB_DESCRI
-	'Descricao'																, ; //XB_DESCSPA
-	'Descricao'																, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	'ZB1_DESCRI'															, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-aAdd( aSXB, { ;
-	'ZB1MVC'																, ; //XB_ALIAS
-	'4'																		, ; //XB_TIPO
-	'02'																	, ; //XB_SEQ
-	'01'																	, ; //XB_COLUNA
-	'Codigo'																, ; //XB_DESCRI
-	'Codigo'																, ; //XB_DESCSPA
-	'Codigo'																, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	'ZB1_CODIGO'														, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-aAdd( aSXB, { ;
-	'ZB1MVC'																, ; //XB_ALIAS
-	'4'																		, ; //XB_TIPO
-	'02'																	, ; //XB_SEQ
-	'02'																	, ; //XB_COLUNA
-	'Descricao'																, ; //XB_DESCRI
-	'Descricao'																, ; //XB_DESCSPA
-	'Descricao'																, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	'ZB1_DESCRI'															, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-aAdd( aSXB, { ;
-	'ZB1MVC'																, ; //XB_ALIAS
-	'5'																		, ; //XB_TIPO
-	'01'																	, ; //XB_SEQ
-	''																		, ; //XB_COLUNA
-	''																		, ; //XB_DESCRI
-	''																		, ; //XB_DESCSPA
-	''																		, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	'ZB1->ZB1_CODIGO'														, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-//
-// Consulta ZB2MVC
-//
-aAdd( aSXB, { ;
-	'ZB2MVC'																, ; //XB_ALIAS
-	'1'																		, ; //XB_TIPO
-	'01'																	, ; //XB_SEQ
-	'DB'																	, ; //XB_COLUNA
-	'Aluno'																	, ; //XB_DESCRI
-	'Aluno'																	, ; //XB_DESCSPA
-	'Aluno'																	, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	'ZB2'																	, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-aAdd( aSXB, { ;
-	'ZB2MVC'																, ; //XB_ALIAS
-	'2'																		, ; //XB_TIPO
-	'01'																	, ; //XB_SEQ
-	'01'																	, ; //XB_COLUNA
-	'R.A.'																	, ; //XB_DESCRI
-	'R.A.'																	, ; //XB_DESCSPA
-	'R.A.'																	, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	''																	, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-aAdd( aSXB, { ;
-	'ZB2MVC'																, ; //XB_ALIAS
-	'2'																		, ; //XB_TIPO
-	'02'																	, ; //XB_SEQ
-	'02'																	, ; //XB_COLUNA
-	'Descricao'																, ; //XB_DESCRI
-	'Descricao'																, ; //XB_DESCSPA
-	'Descricao'																, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	''																		, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-aAdd( aSXB, { ;
-	'ZB2MVC'																, ; //XB_ALIAS
-	'4'																		, ; //XB_TIPO
-	'01'																	, ; //XB_SEQ
-	'01'																	, ; //XB_COLUNA
-	'R.A.'																	, ; //XB_DESCRI
-	'R.A.'																	, ; //XB_DESCSPA
-	'R.A.'																	, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	'ZB2_RA'															, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-aAdd( aSXB, { ;
-	'ZB2MVC'																, ; //XB_ALIAS
-	'4'																		, ; //XB_TIPO
-	'01'																	, ; //XB_SEQ
-	'02'																	, ; //XB_COLUNA
-	'Nome'																	, ; //XB_DESCRI
-	'Nome'																	, ; //XB_DESCSPA
-	'Nome'																	, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	'ZB2_NOME'															, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-aAdd( aSXB, { ;
-	'ZB2MVC'																, ; //XB_ALIAS
-	'4'																		, ; //XB_TIPO
-	'02'																	, ; //XB_SEQ
-	'01'																	, ; //XB_COLUNA
-	'R.A.'																	, ; //XB_DESCRI
-	'R.A.'																	, ; //XB_DESCSPA
-	'R.A.'																	, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	'ZB2_RA'																, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-aAdd( aSXB, { ;
-	'ZB2MVC'																, ; //XB_ALIAS
-	'4'																		, ; //XB_TIPO
-	'02'																	, ; //XB_SEQ
-	'02'																	, ; //XB_COLUNA
-	'Nome'																	, ; //XB_DESCRI
-	'Nome'																	, ; //XB_DESCSPA
-	'Nome'																	, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	'ZB2_NOME'																, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-aAdd( aSXB, { ;
-	'ZB2MVC'																, ; //XB_ALIAS
-	'5'																		, ; //XB_TIPO
-	'01'																	, ; //XB_SEQ
-	''																		, ; //XB_COLUNA
-	''																		, ; //XB_DESCRI
-	''																		, ; //XB_DESCSPA
-	''																		, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	'ZB2->ZB2_RA'														, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-//
-// Consulta ZB3MVC
-//
-aAdd( aSXB, { ;
-	'ZB3MVC'																, ; //XB_ALIAS
-	'1'																		, ; //XB_TIPO
-	'01'																	, ; //XB_SEQ
-	'DB'																	, ; //XB_COLUNA
-	'Disciplina'															, ; //XB_DESCRI
-	'Disciplina'															, ; //XB_DESCSPA
-	'Disciplina'															, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	'ZB3'																, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-aAdd( aSXB, { ;
-	'ZB3MVC'																, ; //XB_ALIAS
-	'2'																		, ; //XB_TIPO
-	'01'																	, ; //XB_SEQ
-	'01'																	, ; //XB_COLUNA
-	'Codigo'																, ; //XB_DESCRI
-	'Codigo'																, ; //XB_DESCSPA
-	'Codigo'																, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	''																	, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-aAdd( aSXB, { ;
-	'ZB3MVC'																, ; //XB_ALIAS
-	'2'																		, ; //XB_TIPO
-	'02'																	, ; //XB_SEQ
-	'02'																	, ; //XB_COLUNA
-	'Descricao'																, ; //XB_DESCRI
-	'Descricao'																, ; //XB_DESCSPA
-	'Descricao'																, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	''																	, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-aAdd( aSXB, { ;
-	'ZB3MVC'																, ; //XB_ALIAS
-	'4'																		, ; //XB_TIPO
-	'01'																	, ; //XB_SEQ
-	'01'																	, ; //XB_COLUNA
-	'Codigo'																, ; //XB_DESCRI
-	'Codigo'																, ; //XB_DESCSPA
-	'Codigo'																, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	'ZB3_CODIGO'														, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-aAdd( aSXB, { ;
-	'ZB3MVC'																, ; //XB_ALIAS
-	'4'																		, ; //XB_TIPO
-	'01'																	, ; //XB_SEQ
-	'02'																	, ; //XB_COLUNA
-	'Descricao'																, ; //XB_DESCRI
-	'Descricao'																, ; //XB_DESCSPA
-	'Descricao'																, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	'ZB3_DESCRI'														, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-aAdd( aSXB, { ;
-	'ZB3MVC'																, ; //XB_ALIAS
-	'4'																		, ; //XB_TIPO
-	'02'																	, ; //XB_SEQ
-	'01'																	, ; //XB_COLUNA
-	'Codigo'																, ; //XB_DESCRI
-	'Codigo'																, ; //XB_DESCSPA
-	'Codigo'																, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	'ZB3_CODIGO'														, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-aAdd( aSXB, { ;
-	'ZB3MVC'																, ; //XB_ALIAS
-	'4'																		, ; //XB_TIPO
-	'02'																	, ; //XB_SEQ
-	'02'																	, ; //XB_COLUNA
-	'Descricao'																, ; //XB_DESCRI
-	'Descricao'																, ; //XB_DESCSPA
-	'Descricao'																, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	'ZB3_DESCRI'														, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-aAdd( aSXB, { ;
-	'ZB3MVC'																, ; //XB_ALIAS
-	'5'																		, ; //XB_TIPO
-	'01'																	, ; //XB_SEQ
-	''																		, ; //XB_COLUNA
-	''																		, ; //XB_DESCRI
-	''																		, ; //XB_DESCSPA
-	''																		, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	'ZB3->ZB3_CODIGO'											, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-//
-// Consulta ZC0
-//
-aAdd( aSXB, { ;
-	'ZC0'																	, ; //XB_ALIAS
-	'1'																		, ; //XB_TIPO
-	'01'																	, ; //XB_SEQ
-	'DB'																	, ; //XB_COLUNA
-	'Cliente Projeto MVC'													, ; //XB_DESCRI
-	'Cliente Projeto MVC'													, ; //XB_DESCSPA
-	'Cliente Projeto MVC'													, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	'ZC0'																, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-aAdd( aSXB, { ;
-	'ZC0'																	, ; //XB_ALIAS
-	'2'																		, ; //XB_TIPO
-	'01'																	, ; //XB_SEQ
-	'01'																	, ; //XB_COLUNA
-	'Código+loja'															, ; //XB_DESCRI
-	'Código+loja'															, ; //XB_DESCSPA
-	'Código+loja'															, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	''																	, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-aAdd( aSXB, { ;
-	'ZC0'																	, ; //XB_ALIAS
-	'3'																		, ; //XB_TIPO
-	'01'																	, ; //XB_SEQ
-	'01'																	, ; //XB_COLUNA
-	'Cadastra Novo'															, ; //XB_DESCRI
-	'Incluye Nuevo'															, ; //XB_DESCSPA
-	'Add New'																, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	'01'																, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-aAdd( aSXB, { ;
-	'ZC0'																	, ; //XB_ALIAS
-	'4'																		, ; //XB_TIPO
-	'01'																	, ; //XB_SEQ
-	'01'																	, ; //XB_COLUNA
-	'Código'																, ; //XB_DESCRI
-	'Código'																, ; //XB_DESCSPA
-	'Código'																, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	'ZC0_COD'															, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-aAdd( aSXB, { ;
-	'ZC0'																	, ; //XB_ALIAS
-	'4'																		, ; //XB_TIPO
-	'01'																	, ; //XB_SEQ
-	'02'																	, ; //XB_COLUNA
-	'Loja'																	, ; //XB_DESCRI
-	'Loja'																	, ; //XB_DESCSPA
-	'Loja'																	, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	'ZC0_LOJA'															, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-aAdd( aSXB, { ;
-	'ZC0'																	, ; //XB_ALIAS
-	'4'																		, ; //XB_TIPO
-	'01'																	, ; //XB_SEQ
-	'03'																	, ; //XB_COLUNA
-	'Nome'																	, ; //XB_DESCRI
-	'Nome'																	, ; //XB_DESCSPA
-	'Nome'																	, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	'ZC0_NOME'															, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-aAdd( aSXB, { ;
-	'ZC0'																	, ; //XB_ALIAS
-	'5'																		, ; //XB_TIPO
-	'01'																	, ; //XB_SEQ
-	''																		, ; //XB_COLUNA
-	''																		, ; //XB_DESCRI
-	''																		, ; //XB_DESCSPA
-	''																		, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	'ZC0->ZC0_COD'														, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-aAdd( aSXB, { ;
-	'ZC0'																	, ; //XB_ALIAS
+	'ZRA'																, ; //XB_ALIAS
 	'5'																		, ; //XB_TIPO
 	'02'																	, ; //XB_SEQ
 	''																		, ; //XB_COLUNA
@@ -2546,85 +2064,8 @@ aAdd( aSXB, { ;
 	''																		, ; //XB_DESCSPA
 	''																		, ; //XB_DESCENG
 	''																		, ; //XB_WCONTEM
-	'ZC0->ZC0_LOJA'														, ; //XB_CONTEM
+	'ZRA->ZRA_DESCRI'											, ; //XB_CONTEM
 	''																	} ) //XB_LOCALIZ
-
-//
-// Consulta ZC1
-//
-aAdd( aSXB, { ;
-	'ZC1'																	, ; //XB_ALIAS
-	'1'																		, ; //XB_TIPO
-	'01'																	, ; //XB_SEQ
-	'DB'																	, ; //XB_COLUNA
-	'PRODUTO PROJETO MVC'													, ; //XB_DESCRI
-	'PRODUTO PROJETO MVC'													, ; //XB_DESCSPA
-	'PRODUTO PROJETO MVC'													, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	'ZC1'																	, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-aAdd( aSXB, { ;
-	'ZC1'																	, ; //XB_ALIAS
-	'2'																		, ; //XB_TIPO
-	'01'																	, ; //XB_SEQ
-	'01'																	, ; //XB_COLUNA
-	'Codigo'																, ; //XB_DESCRI
-	'Codigo'																, ; //XB_DESCSPA
-	'Codigo'																, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	''																	, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-aAdd( aSXB, { ;
-	'ZC1'																	, ; //XB_ALIAS
-	'3'																		, ; //XB_TIPO
-	'01'																	, ; //XB_SEQ
-	'01'																	, ; //XB_COLUNA
-	'Cadastra Novo'															, ; //XB_DESCRI
-	'Incluye Nuevo'															, ; //XB_DESCSPA
-	'Add New'																, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	'01'																, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-aAdd( aSXB, { ;
-	'ZC1'																	, ; //XB_ALIAS
-	'4'																		, ; //XB_TIPO
-	'01'																	, ; //XB_SEQ
-	'01'																	, ; //XB_COLUNA
-	'Codigo'																, ; //XB_DESCRI
-	'Codigo'																, ; //XB_DESCSPA
-	'Codigo'																, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	'ZC1_COD'														, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-aAdd( aSXB, { ;
-	'ZC1'																	, ; //XB_ALIAS
-	'4'																		, ; //XB_TIPO
-	'01'																	, ; //XB_SEQ
-	'02'																	, ; //XB_COLUNA
-	'Descricao'																, ; //XB_DESCRI
-	'Descricao'																, ; //XB_DESCSPA
-	'Descricao'																, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	'ZC1_DESC'													, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-aAdd( aSXB, { ;
-	'ZC1'																	, ; //XB_ALIAS
-	'5'																		, ; //XB_TIPO
-	'01'																	, ; //XB_SEQ
-	''																		, ; //XB_COLUNA
-	''																		, ; //XB_DESCRI
-	''																		, ; //XB_DESCSPA
-	''																		, ; //XB_DESCENG
-	''																		, ; //XB_WCONTEM
-	'ZC1->ZC1_COD'												, ; //XB_CONTEM
-	''																	} ) //XB_LOCALIZ
-
-
 
 //
 // Atualizando dicionário
