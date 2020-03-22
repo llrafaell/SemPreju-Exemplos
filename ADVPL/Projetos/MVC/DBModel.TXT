@@ -1,0 +1,45 @@
+Para vizualizar a modelagem acesse o site: https://dbdiagram.io
+
+e cole o codigo abaixo
+
+
+// Creating tables
+Table ZRA_DESRES as ZRA {
+  CODIGO char [pk, increment] // auto-increment
+  FILIAL varchar
+  DESCRI varchar
+  TIPO char
+}
+
+// Creating tables
+Table ZRB_GRP as ZRB {
+  CODIGO varchar [pk, increment] // auto-increment
+  DESCRI varchar
+}
+
+// Creating tables
+Table ZRC_ITEMGRP as ZRC {
+  COD_ZRB varchar [pk, increment] // auto-increment
+  COD_ZRA varchar
+  DESCRI varchar
+}
+
+
+Table ZRD_MOVIM as ZRD {
+  CODIGO varchar [pk]
+  COD_ZRA varchar
+  DATA int
+  VALOR varchar
+ }
+
+
+
+// Creating references
+// You can also define relaionship separately
+// > many-to-one; < one-to-many; - one-to-one
+Ref: ZRB.CODIGO < ZRC.COD_ZRB
+Ref: ZRC.COD_ZRA < ZRA.CODIGO
+Ref: ZRD.COD_ZRA < ZRA.CODIGO
+
+
+//----------------------------------------------//
