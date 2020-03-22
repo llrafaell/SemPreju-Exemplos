@@ -1,6 +1,7 @@
 #INCLUDE "PROTHEUS.CH"
 #INCLUDE "RWMAKE.CH"
 
+
 /*/{Protheus.doc} P.E. AfterLogin
 Função chamada após o login do usuário e no MDI a cada nova aba
 @author TOTVS http://tdn.totvs.com/pages/releaseview.action?pageId=6815186
