@@ -28,6 +28,10 @@ FOLDER - ADVPL\Exemplos\Classes
 FOLDER - ADVPL\Exemplos\WS
   * **SPCliente.prw**: Fonte exemplo de Ws para listar o cadastro de cliente
 
+FOLDER - SQL
+  * **rebuildIndex.SQL**: Script para ajudar na administração do SQL Server sobre index.
+
+
 Tecnologia e Requisitos
 ----
 
