@@ -27,7 +27,10 @@ FOLDER - ADVPL\Exemplos\Classes
   
 FOLDER - ADVPL\Exemplos\WS
   * **SPCliente.prw**: Fonte exemplo de Ws para listar o cadastro de cliente
-
+  
+FOLDER - ADVPL\Exemplos\Scripts
+  * **Compilar_automaticamente_ADVPL**: Script para compilação e desfragmentação em ADVPL automaticamente
+  
 FOLDER - SQL
   * **rebuildIndex.SQL**: Script para ajudar na administração do SQL Server sobre index.
 
