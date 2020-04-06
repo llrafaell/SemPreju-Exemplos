@@ -20,7 +20,8 @@ FOLDER - ADVPL\Exemplos\
    * **SPDTEXT.prw**: Fonte exemplo para converter data em extenso.
    * **SPDVALSQL.prw**: Fonte exemplo para validar se uma string SQL é valida.
    * **SPPROGR.prw**: Fonte exemplo com diversas barras de progresso.
-   * **AfterLogin.prw**: PE chamado após login ou abertura de telas se acesso em MDI.
+   * **AfterLogin.prw**: PE chamado após login ou abertura de telas se acesso em MDI..
+   * **SPHELPCP.prw**: Função para inclusão de help em campos MSGET e como usar Place Hold no TGET.
   
 FOLDER - ADVPL\Exemplos\Classes
   * **SPCLASSM.prw**: Fonte exemplo de uso da classe ClassMethArr
