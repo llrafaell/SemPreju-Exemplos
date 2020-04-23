@@ -1,5 +1,5 @@
 
-Repositório de fontes customizados e open-source 
+Repositório de fontes customizados e open-source
 ====
 _Neste repositório você encontrará projetos open-source em linguagem advpl, tl++, framework portinari-ui, além de algumas ferramentas úteis_
 
@@ -14,7 +14,7 @@ Saiba mais sobre os fontes em -www.sempreju.com.br
 FOLDER - ADVPL\Projetos
   * **SPEXPTABL.prw**: Fonte para exportar o dicionario de dados em HTML
   * **SPSLACK.prw**: Fonte para integrar o protheus ao slack
-  
+
 FOLDER - ADVPL\Exemplos\
    * **SPCORES.prw**: Fonte exemplo de uso das principais cores em componente SAY.
    * **SPDTEXT.prw**: Fonte exemplo para converter data em extenso.
@@ -22,16 +22,17 @@ FOLDER - ADVPL\Exemplos\
    * **SPPROGR.prw**: Fonte exemplo com diversas barras de progresso.
    * **AfterLogin.prw**: PE chamado após login ou abertura de telas se acesso em MDI..
    * **SPHELPCP.prw**: Função para inclusão de help em campos MSGET e como usar Place Hold no TGET.
-  
+   * **SPFLDPOS.prw**: Função para inclusão de help em campos MSGET e como usar Place Hold no TGET.
+
 FOLDER - ADVPL\Exemplos\Classes
   * **SPCLASSM.prw**: Fonte exemplo de uso da classe ClassMethArr
-  
+
 FOLDER - ADVPL\Exemplos\WS
   * **SPCliente.prw**: Fonte exemplo de Ws para listar o cadastro de cliente
-  
+
 FOLDER - ADVPL\Exemplos\Scripts
   * **Compilar_automaticamente_ADVPL**: Script para compilação e desfragmentação em ADVPL automaticamente
-  
+
 FOLDER - SQL
   * **rebuildIndex.SQL**: Script para ajudar na administração do SQL Server sobre index.
 
