@@ -23,7 +23,8 @@ FOLDER - ADVPL\Exemplos\
    * **AfterLogin.prw**: PE chamado após login ou abertura de telas se acesso em MDI..
    * **SPHELPCP.prw**: Função para inclusão de help em campos MSGET e como usar Place Hold no TGET.
    * **SPFLDPOS.prw**: Função demonstrando como usar o FieldPos.
-   * **SPDIALO.prw**: Como remover o botão de fechar de uma dialog, fechar automaticamente dialog em ADVPL
+   * **SPDIALO.prw**: Como remover o botão de fechar de uma dialog, fechar automaticamente dialog em ADVPL.
+   * **SPFORMT.prw**: Como formatar string para serem utilizadas em select na condicao IN.
 
 FOLDER - ADVPL\Exemplos\Classes
   * **SPCLASSM.prw**: Fonte exemplo de uso da classe ClassMethArr

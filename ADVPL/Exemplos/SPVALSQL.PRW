@@ -2,8 +2,6 @@
 #INCLUDE "RWMAKE.CH"
 #INCLUDE "TOPCONN.CH"
 
-
-
 /*/{Protheus.doc} SPVALSQL
 Função SPVALSQL
 @param Não recebe parametros
@@ -31,5 +29,5 @@ If nQueryRet < 0
     msgstop("ERRO NA QUERY: " + chr(10) + TCSQLError())
     lErro := .T.
 Endif
-
+ 
 Return lErro
