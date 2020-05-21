@@ -1,14 +1,12 @@
 #Include "Protheus.ch"
 #INCLUDE "fileio.ch"
 
-#define CAMINHO 'D:\TOTVS\Tabelas\'
+#define CAMINHO 'C:\TOTVS\Tabelas\'
 Static lBySQL := .T. //inserir dados via SQL
 
 
 
 User Function SPEXPALL()
-//Exporta tabelas
-u_SPEXPTABL() //sem threads
 
 //gera pagina principal com todas os links para paginas das tabelas
 U_SPEXP1()
@@ -31,6 +29,9 @@ U_SPEXP6()
 //gera tabelas de Grupo de Campos
 U_SPEXP7()
 
+//Exporta tabelas
+u_SPEXPTABL() //sem threads
+
 Return .t.
 
 /*/{Protheus.doc} SPEXPTABL
@@ -49,7 +50,8 @@ Local aFields   as array // arary com campos de uma determinada tabela
 Local _nI       as numeric
 
 
-cDiretori  := CAMINHO+'\tabelas\'
+cDiretori  := CAMINHO+'tabelas\'
+MakeDir( cDiretori )
 //remover se for chamar do menu
 RpcSetType(3)
 RpcSetEnv('99', '01')
@@ -68,15 +70,13 @@ Return .t.
 
 //gera arquivo SX2
 Static Function FSGERA()
-Local aArea    as array
-
 Local cDiretori as character
 Local cArquivo  as character
 Local nHdl      as numeric
 Local aFields   as array // arary com campos de uma determinada tabela
 Local _nI       as numeric
 
-cDiretori  := CAMINHO+'\tabelas\'
+cDiretori  := CAMINHO+'tabelas\'
 cArquivo := 'tabela_'+lower(X2_CHAVE)+'.html'
 conout("Iniciando: "+cArquivo)
 nHdl := fCreate(cDiretori+cArquivo)
@@ -289,6 +289,7 @@ EndIf
 
 fWrite(nHdl, '</center><br>' + CRLF)
 //Fecha ponteiro do arquivo
+fWrite(nHdl,fsGooAn() + CRLF) //adiciona google analitcs
 fWrite(nHdl, '</html>' + CRLF)
 fClose(nHdl)
 conout("Finalizado: "+cArquivo)
@@ -305,8 +306,10 @@ User Function SPEXP5()
 Local cDiretori as character
 Local cArquivo  as character
 Local nHdl      as numeric
+Local ii        as Numeric
 
 cDiretori  := CAMINHO +'F3\'
+MakeDir( cDiretori )
 If !ExistDir( cDiretori )  //Checar se diretorio existe
     Conout('O Diretório: '+cDiretori+' Não existe, crie antes de continuar')
     Return .t.
@@ -398,7 +401,8 @@ while !eof()
         //Se nao for a primeira execucao, finaliza o arquivo anterior
         if !empty(cAliAnt)
             fWrite(nHdl, '</table><br>' + CRLF)
-            //Fecha ponteiro do arquivo
+            //Fecha ponteiro do arquivo            
+            fWrite(nHdl,fsGooAn() + CRLF) //adiciona google analitcs
             fWrite(nHdl, '</html>' + CRLF)
             fClose(nHdl)
             conout("Finalizado: "+cArquivo)
@@ -453,6 +457,7 @@ Enddo
 if !empty(cAliAnt)
     fWrite(nHdl, '</table><br>' + CRLF)
     //Fecha ponteiro do arquivo
+    fWrite(nHdl,fsGooAn() + CRLF) //adiciona google analitcs
     fWrite(nHdl, '</html>' + CRLF)
     fClose(nHdl)
     conout("Finalizado: "+cArquivo)
@@ -480,8 +485,10 @@ User Function SPEXP6()
 Local cDiretori as character
 Local cArquivo  as character
 Local nHdl      as numeric
+Local ii        as Numeric
 
 cDiretori  := CAMINHO +'gatilhos\'
+MakeDir( cDiretori )
 If !ExistDir( cDiretori )  //Checar se diretorio existe
     Conout('O Diretório: '+cDiretori+' Não existe, crie antes de continuar')
     Return .t.
@@ -583,7 +590,8 @@ while !eof()
         //Se nao for a primeira execucao, finaliza o arquivo anterior
         if !empty(cAliAnt)
             fWrite(nHdl, '</table><br>' + CRLF)
-            //Fecha ponteiro do arquivo
+            //Fecha ponteiro do arquivo            
+            fWrite(nHdl,fsGooAn() + CRLF) //adiciona google analitcs
             fWrite(nHdl, '</html>' + CRLF)
             fClose(nHdl)
             conout("Finalizado: "+cArquivo)
@@ -646,6 +654,7 @@ Enddo
 if !empty(cAliAnt)
     fWrite(nHdl, '</table><br>' + CRLF)
     //Fecha ponteiro do arquivo
+    fWrite(nHdl,fsGooAn() + CRLF) //adiciona google analitcs
     fWrite(nHdl, '</html>' + CRLF)
     fClose(nHdl)
     conout("Finalizado: "+cArquivo)
@@ -673,6 +682,7 @@ Local cArquivo  as character
 Local nHdl      as numeric
 
 cDiretori  := CAMINHO +'grupoCampo\'
+MakeDir( cDiretori )
 If !ExistDir( cDiretori )  //Checar se diretorio existe
     Conout('O Diretório: '+cDiretori+' Não existe, crie antes de continuar')
     Return .t.
@@ -730,7 +740,8 @@ While !eof()
     fWrite(nHdl, '</tr>')
 
     fWrite(nHdl, '</table><br>' + CRLF)
-    //Fecha ponteiro do arquivo
+    //Fecha ponteiro do 
+    fWrite(nHdl,fsGooAn() + CRLF) //adiciona google analitcs
     fWrite(nHdl, '</html>' + CRLF)
     fClose(nHdl)
     conout("Finalizado: "+cArquivo)
@@ -834,11 +845,29 @@ cReturn += '    }' + CRLF
 cReturn += '  }' + CRLF
 cReturn += '}' + CRLF
 cReturn += '</script>' + CRLF
+
+cReturn += fsGooAn() + CRLF
+
 cReturn += '<?php' + CRLF
 cReturn += 'get_footer();' + CRLF
 cReturn += '?>' + CRLF
 
 return cReturn
+
+
+Static Function fsGooAn()
+Local cReturn as character
+cReturn = '' 
+cReturn += '<!-- Global site tag (gtag.js) - Google Analytics -->' + CRLF
+cReturn += '<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114930107-3"></script>' + CRLF
+cReturn += '<script>' + CRLF
+cReturn += '  window.dataLayer = window.dataLayer || [];' + CRLF
+cReturn += '  function gtag(){dataLayer.push(arguments);}' + CRLF
+cReturn += "  gtag('js', new Date());" + CRLF
+cReturn += " gtag('config', 'UA-114930107-3');" + CRLF
+cReturn += '</script>' + CRLF
+return cReturn
+
 
 
 
@@ -850,6 +879,7 @@ Local cArquivo  as character
 Local nHdl      as numeric
 
 cDiretori  := CAMINHO
+MakeDir( cDiretori )
 If !ExistDir( cDiretori )  //Checar se diretorio existe
     Conout('O Diretório: '+cDiretori+' Não existe, crie antes de continuar')
     Return .t.
@@ -925,6 +955,7 @@ Local nHdl      as numeric
 Local ii as numeric
 
 cDiretori  := CAMINHO
+MakeDir( cDiretori )
 If !ExistDir( cDiretori )  //Checar se diretorio existe
     Conout('O Diretório: '+cDiretori+' Não existe, crie antes de continuar')
     Return .t.
@@ -1065,6 +1096,7 @@ Local cArquivo  as character
 Local nHdl      as numeric
 
 cDiretori  := CAMINHO
+MakeDir( cDiretori )
 If !ExistDir( cDiretori )  //Checar se diretorio existe
     Conout('O Diretório: '+cDiretori+' Não existe, crie antes de continuar')
     Return .t.
@@ -1138,6 +1170,7 @@ Local cArquivo  as character
 Local nHdl      as numeric
 
 cDiretori  := CAMINHO
+MakeDir( cDiretori )
 If !ExistDir( cDiretori )  //Checar se diretorio existe
     Conout('O Diretório: '+cDiretori+' Não existe, crie antes de continuar')
     Return .t.
