@@ -2,11 +2,12 @@
 #INCLUDE "fileio.ch"
 
 #define CAMINHO 'C:\TOTVS\Tabelas\'
-Static lBySQL := .T. //inserir dados via SQL
+Static lBySQL := .F. //inserir dados via SQL
 
 
 
 User Function SPEXPALL()
+
 
 //gera pagina principal com todas os links para paginas das tabelas
 U_SPEXP1()
@@ -19,6 +20,7 @@ U_SPEXP3()
 
 //gera pagina principal com todas os links para paginas de gatilhoss
 U_SPEXP4()
+
 
 //gera tabelas de consulta padrão
 U_SPEXP5()
@@ -235,7 +237,7 @@ For _nI:=1 to len(aFields)
     fWrite(nHdl, '<td>'+cvaltochar(GetSx3Cache( aFields[_nI], 'X3_DECIMAL')) +'</td>' + CRLF)
     fWrite(nHdl, '<td>'+Alltrim(GetSx3Cache( aFields[_nI], 'X3_VALID')) +'</td>' + CRLF)
     fWrite(nHdl, '<td>'+Alltrim(GetSx3Cache( aFields[_nI], 'X3_RELACAO')) +'</td>' + CRLF)
-    fWrite(nHdl, '<td><a href="/Tabelas_Protheus/tabelas/F3/'+Alltrim(GetSx3Cache( aFields[_nI], 'X3_F3'))+'.html">'+Alltrim(GetSx3Cache( aFields[_nI], 'X3_F3')) +'</a></td>' + CRLF)
+    fWrite(nHdl, '<td><a href="/tabelas_protheus/tabelas/f3/'+lower(Alltrim(GetSx3Cache( aFields[_nI], 'X3_F3')))+'.html">'+Alltrim(GetSx3Cache( aFields[_nI], 'X3_F3')) +'</a></td>' + CRLF)
     if !Empty(GetSx3Cache( aFields[_nI], 'X3_TRIGGER'))
         fWrite(nHdl, '<td><a href="/Tabelas_Protheus/tabelas/gatilhos/'+Alltrim(aFields[_nI])+'.html">'+GetSx3Cache( aFields[_nI], 'X3_TRIGGER') +'</td>' + CRLF)
     else
@@ -248,7 +250,7 @@ For _nI:=1 to len(aFields)
     fWrite(nHdl, '<td>'+Alltrim(GetSx3Cache( aFields[_nI], 'X3_CBOX')) +'</td>' + CRLF)
     fWrite(nHdl, '<td>'+Alltrim(GetSx3Cache( aFields[_nI], 'X3_WHEN')) +'</td>' + CRLF)
     fWrite(nHdl, '<td>'+Alltrim(GetSx3Cache( aFields[_nI], 'X3_INIBRW')) +'</td>' + CRLF)
-    fWrite(nHdl, '<td><a href="/Tabelas_Protheus/tabelas/grupoCampo/'+Alltrim(GetSx3Cache( aFields[_nI], 'X3_GRPSXG'))+'.html">'+Alltrim(GetSx3Cache( aFields[_nI], 'X3_GRPSXG')) +'</a></td>' + CRLF)
+    fWrite(nHdl, '<td><a href="/tabelas_protheus/tabelas/grupocampo/'+lower(Alltrim(GetSx3Cache( aFields[_nI], 'X3_GRPSXG')))+'.html">'+Alltrim(GetSx3Cache( aFields[_nI], 'X3_GRPSXG')) +'</a></td>' + CRLF)
     fWrite(nHdl, '<td>'+Alltrim(GetSx3Cache( aFields[_nI], 'X3_FOLDER')) +'</td>' + CRLF)
     fWrite(nHdl, '</tr>' + CRLF)
 Next
@@ -308,7 +310,7 @@ Local cArquivo  as character
 Local nHdl      as numeric
 Local ii        as Numeric
 
-cDiretori  := CAMINHO +'F3\'
+cDiretori  := CAMINHO +'f3\'
 MakeDir( cDiretori )
 If !ExistDir( cDiretori )  //Checar se diretorio existe
     Conout('O Diretório: '+cDiretori+' Não existe, crie antes de continuar')
@@ -420,14 +422,14 @@ while !eof()
 
         //inicio da montagem do HTML
         fWrite(nHdl, '<html>' + CRLF)
-        fWrite(nHdl, EncodeUTF8('<head><title>Consulta Pasdrão: '+ alltrim(QRYTMP->XB_ALIAS) + ' - '+ alltrim(QRYTMP->XB_DESCRI)+'</title></head>') + CRLF)
+        fWrite(nHdl, EncodeUTF8('<head><meta charset="UTF-8"><title>Consulta Padrao: '+ alltrim(QRYTMP->XB_ALIAS) + ' - '+ alltrim(QRYTMP->XB_DESCRI)+'</title></head>') + CRLF)
         fWrite(nHdl, '<body>' + CRLF)
-        fWrite(nHdl, '<font color="orange"><h2 id="'+SX2->X2_CHAVE+'">Consulta Padrï¿½o: '+alltrim(QRYTMP->XB_ALIAS) + ' - '+ alltrim(QRYTMP->XB_DESCRI)+'</h2></font>' + CRLF)
+        fWrite(nHdl, '<font color="orange"><h2 id="'+SX2->X2_CHAVE+'">Consulta Padrao: '+alltrim(QRYTMP->XB_ALIAS) + ' - '+ alltrim(QRYTMP->XB_DESCRI)+'</h2></font>' + CRLF)
         fWrite(nHdl, '<br>' + CRLF)
 
         fWrite(nHdl, '<br><table border="1">' + CRLF)
         fWrite(nHdl, '<tr>')
-        fWrite(nHdl, EncodeUTF8('<td colspan="6" align="center"><b><i>Consulta Padrão(SXB): '+alltrim(QRYTMP->XB_ALIAS) + ' - '+ alltrim(QRYTMP->XB_DESCRI)+'</i></b></td>'))
+        fWrite(nHdl, EncodeUTF8('<td colspan="6" align="center"><b><i>Consulta Padrao(SXB): '+alltrim(QRYTMP->XB_ALIAS) + ' - '+ alltrim(QRYTMP->XB_DESCRI)+'</i></b></td>'))
         fWrite(nHdl, '</tr>')
         fWrite(nHdl, '<tr>')
         fWrite(nHdl, '<td><b>XB_ALIAS</b></td>')
@@ -681,7 +683,7 @@ Local cDiretori as character
 Local cArquivo  as character
 Local nHdl      as numeric
 
-cDiretori  := CAMINHO +'grupoCampo\'
+cDiretori  := CAMINHO +'grupocampo\'
 MakeDir( cDiretori )
 If !ExistDir( cDiretori )  //Checar se diretorio existe
     Conout('O Diretório: '+cDiretori+' Não existe, crie antes de continuar')
@@ -893,7 +895,7 @@ If !IsBlind() //nao for executado do menu
     RpcSetEnv('99', '01')
 Endif
 
-cArquivo := 'Tabelas_Protheus.php' //arquivo pai que chamas todos as demais tabelas
+cArquivo := 'tabelas_protheus.php' //arquivo pai que chamas todos as demais tabelas
 conout("Iniciando: "+cArquivo)
 
 nHdl := fCreate(cDiretori+cArquivo)
@@ -924,7 +926,7 @@ SX2->(DbGoTop())
 While !SX2->(EoF())
 
     fWrite(nHdl, '				<tr> ' + CRLF)
-    fWrite(nHdl, '					<td><a href="/Tabelas_Protheus/tabelas/tabela_'+alltrim(lower(SX2->X2_CHAVE))+'.html">'+EncodeUTF8(alltrim(Upper(SX2->X2_CHAVE)+' - '+(FwSX2Util():GetX2Name( SX2->X2_CHAVE ))))+'</a></td> ' + CRLF)
+    fWrite(nHdl, '					<td><a href="/tabelas_protheus/tabelas/tabela_'+alltrim(lower(SX2->X2_CHAVE))+'.html">'+EncodeUTF8(alltrim(Upper(SX2->X2_CHAVE)+' - '+(FwSX2Util():GetX2Name( SX2->X2_CHAVE ))))+'</a></td> ' + CRLF)
     fWrite(nHdl, '				</tr> ' + CRLF)
     SX2->(DbSkip())
 
@@ -969,7 +971,7 @@ If !IsBlind() //nao for executado do menu
     RpcSetEnv('99', '01')
 Endif
 
-cArquivo := 'Consulta_Padrao_Protheus.php' //arquivo pai que chamas todos as demais tabelas
+cArquivo := 'consulta_padrao_protheus.php' //arquivo pai que chamas todos as demais tabelas
 conout("Iniciando: "+cArquivo)
 
 nHdl := fCreate(cDiretori+cArquivo)
@@ -1066,7 +1068,7 @@ cAliAnt := '' //controle novo arquivo
 while !(QRYTMP->(eof()))
 
     fWrite(nHdl, '				<tr> ' + CRLF)
-    fWrite(nHdl, '					<td><a href="/Tabelas_Protheus/F3/'+alltrim(lower(QRYTMP->XB_ALIAS))+'.html">'+EncodeUTF8(alltrim(Upper(QRYTMP->XB_ALIAS)+' - '+Capital(QRYTMP->XB_DESCRI)))+'</a></td> ' + CRLF)
+    fWrite(nHdl, '					<td><a href="/tabelas_protheus/f3/'+alltrim(lower(QRYTMP->XB_ALIAS))+'.html">'+EncodeUTF8(alltrim(Upper(QRYTMP->XB_ALIAS)+' - '+Capital(QRYTMP->XB_DESCRI)))+'</a></td> ' + CRLF)
     fWrite(nHdl, '				</tr> ' + CRLF)
 
     QRYTMP->(dbskip())
@@ -1110,7 +1112,7 @@ If !IsBlind() //nao for executado do menu
     RpcSetEnv('99', '01')
 Endif
 
-cArquivo := 'grupo_campos_Protheus.php' //arquivo pai que chamas todos as demais tabelas
+cArquivo := 'grupo_campos_protheus.php' //arquivo pai que chamas todos as demais tabelas
 conout("Iniciando: "+cArquivo)
 
 nHdl := fCreate(cDiretori+cArquivo)
@@ -1141,7 +1143,7 @@ SXG->(DbGoTop())
 While !SXG->(EoF())
 
     fWrite(nHdl, '				<tr> ' + CRLF)
-    fWrite(nHdl, '					<td><a href="/Tabelas_Protheus/grupoCampo/'+alltrim(lower(SXG->XG_GRUPO))+'.html">'+EncodeUTF8(alltrim(Upper(SXG->XG_GRUPO)+' - '+capital(SXG->XG_DESCRI)))+'</a></td> ' + CRLF)
+    fWrite(nHdl, '					<td><a href="/tabelas_protheus/grupocampo/'+alltrim(lower(SXG->XG_GRUPO))+'.html">'+EncodeUTF8(alltrim(Upper(SXG->XG_GRUPO)+' - '+capital(SXG->XG_DESCRI)))+'</a></td> ' + CRLF)
     fWrite(nHdl, '				</tr> ' + CRLF)
     SXG->(DbSkip())
 
@@ -1218,7 +1220,7 @@ While !SX7->(EoF())
     If cCampo <> SX7->X7_CAMPO
         cCampo := SX7->X7_CAMPO
         fWrite(nHdl, '				<tr> ' + CRLF)
-        fWrite(nHdl, '					<td><a href="/Tabelas_Protheus/gatilhos/'+alltrim(lower(SX7->X7_CAMPO))+'.html">'+EncodeUTF8(alltrim(Upper(SX7->X7_CAMPO)))+'</a></td> ' + CRLF)
+        fWrite(nHdl, '					<td><a href="/tabelas_protheus/gatilhos/'+alltrim(lower(SX7->X7_CAMPO))+'.html">'+EncodeUTF8(alltrim(Upper(SX7->X7_CAMPO)))+'</a></td> ' + CRLF)
         fWrite(nHdl, '				</tr> ' + CRLF)
     Endif
     SX7->(DbSkip())

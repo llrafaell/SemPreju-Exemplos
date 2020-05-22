@@ -7,9 +7,36 @@
 			"name": "Totvs Language Debug",
 			"program": "${command:AskForProgramName}",
 			"cwb": "${workspaceFolder}",
-			"smartclientBin": "C:/totvs/bin/smartclient/smartclient.exe",
+			"smartclientBin": "C:/Totvs/Brasil/Ambiente/Protheus_12_27/Protheus/SmartClient/smartclient.exe",
 			"isMultiSession": true,
 			"enableTableSync": true
 		}
-	]
+	],
+	"lastPrograms": [
+		{
+			"args": [],
+			"label": "S",
+			"description": ""
+		},
+		{
+			"args": [
+				"()"
+			],
+			"label": "U_SPEXPALL",
+			"description": "()"
+		},
+		{
+			"args": [
+				" ()"
+			],
+			"label": "U_SPEXPALL",
+			"description": " ()"
+		},
+		{
+			"args": [],
+			"label": "U_SPEXPALL",
+			"description": ""
+		}
+	],
+	"lastProgramExecuted": "U_SPEXPALL"
 }
