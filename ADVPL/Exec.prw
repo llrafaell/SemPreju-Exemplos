@@ -29,7 +29,7 @@ Local oBtn2Frm := Nil
     oDlg1Frm := MSDialog():New( 091, 232, 225, 574, "SemPreju | Execução" ,,, .F.,,,,,, .T.,,, .T. )
     oSay1Frm := TSay():New( 008 ,008 ,{ || "Informe a função:" } ,oDlg1Frm ,,,.F. ,.F. ,.F. ,.T. ,CLR_BLACK ,CLR_WHITE ,084 ,008 )
     oGet1Frm := TGet():New( 020 ,008 ,{ | u | If( PCount() == 0 ,cGet1Frm ,cGet1Frm := u ) } ,oDlg1Frm ,150 ,008 ,'!@' ,,CLR_BLACK ,CLR_WHITE ,,,,.T. ,"" ,,,.F. ,.F. ,,.F. ,.F. ,"" ,"cGet1Frm" ,,)
-    oBtn1Frm := TButton():New( 040 ,008 ,"Executar" ,oDlg1Frm ,{ || &(allrim(cGet1Frm))    } ,037 ,012 ,,,,.T. ,,"" ,,,,.F. )
+    oBtn1Frm := TButton():New( 040 ,008 ,"Executar" ,oDlg1Frm ,{ || &(alltrim(cGet1Frm))    } ,037 ,012 ,,,,.T. ,,"" ,,,,.F. )
     oBtn2Frm := TButton():New( 040 ,120 ,"Sair"     ,oDlg1Frm ,{ || oDlg1Frm:End() } ,037 ,012 ,,,,.T. ,,"" ,,,,.F. )
     oDlg1Frm:Activate( ,,,.T.)
 /*

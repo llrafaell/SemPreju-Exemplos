@@ -1,7 +1,7 @@
 
 Repositório de fontes customizados e open-source
 ====
-_Neste repositório você encontrará projetos open-source em linguagem advpl, tl++, framework portinari-ui, além de algumas ferramentas úteis_
+_Neste repositório você encontrará projetos open-source em linguagem advpl, tl++, framework po-ui, além de algumas ferramentas úteis_
 
 
 Descrição
@@ -18,13 +18,14 @@ FOLDER - ADVPL\Projetos
 FOLDER - ADVPL\Exemplos\
    * **SPCORES.prw**: Fonte exemplo de uso das principais cores em componente SAY.
    * **SPDTEXT.prw**: Fonte exemplo para converter data em extenso.
-   * **SPDVALSQL.prw**: Fonte exemplo para validar se uma string SQL é valida.
+   * **SPDVALSQL.prw**: Fonte exemplo para validar se uma string SQL são valida.
    * **SPPROGR.prw**: Fonte exemplo com diversas barras de progresso.
    * **AfterLogin.prw**: PE chamado após login ou abertura de telas se acesso em MDI..
    * **SPHELPCP.prw**: Função para inclusão de help em campos MSGET e como usar Place Hold no TGET.
    * **SPFLDPOS.prw**: Função demonstrando como usar o FieldPos.
    * **SPDIALO.prw**: Como remover o botão de fechar de uma dialog, fechar automaticamente dialog em ADVPL.
    * **SPFORMT.prw**: Como formatar string para serem utilizadas em select na condicao IN.
+   * **SPINPUT.prw**: Como utilizar a função FWInputBox e interegir com o usu�rio facilmente.
 
 FOLDER - ADVPL\Exemplos\Classes
   * **SPCLASSM.prw**: Fonte exemplo de uso da classe ClassMethArr
