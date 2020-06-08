@@ -1,7 +1,6 @@
 #Include 'Protheus.ch'
 #Include 'ParmType.ch'
 
-
 /*/{Protheus.doc} xSemPre
 função xSemPre - Rotina para execução de funçoes igual formulas no protheus
 @param Não recebe parametros
