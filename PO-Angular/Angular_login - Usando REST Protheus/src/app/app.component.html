@@ -1,0 +1,22 @@
+﻿<!-- nav -->
+<nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="currentUser">
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" routerLink="/">Inicio</a>
+        <a class="nav-item nav-link" (click)="logout()">Sair</a>
+    </div>
+</nav>
+
+<!-- main app container -->
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
+
+<!-- credits -->
+<div class="text-center mt-4">
+    <p>
+        <a href="https://sempreju.com.br" target="_top">SemPreju - JWT Authentication Exemplo & Tutorial</a>
+    </p>
+    <p>
+        <a href="https://sempreju.com.br" target="_top">SemPreju.com.br</a>
+    </p>
+</div>

@@ -1,0 +1,10 @@
+﻿<div class="card mt-4">
+    <h4 class="card-header">Você está logado no Angular, validando usuário do protheus!!</h4>
+    <div class="card-body">
+        <h6>Clientes encontrados no seu ambiente</h6>
+        <div *ngIf="loading" class="spinner-border spinner-border-sm"></div>
+        <ul *ngIf="clientes">
+            <li *ngFor="let cliente of clientes">{{cliente.code}}-{{cliente.storeId}} {{cliente.name}}</li>
+        </ul>
+    </div>
+</div>

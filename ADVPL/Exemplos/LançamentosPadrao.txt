@@ -1,0 +1,529 @@
+Lançamento Padrão: 500, Descrição: Contas a Receber - Inclusao de Titulos                                                                                  
+Lançamento Padrão: 501, Descrição: Contas a Receber - Inclusao de Titulos Recebimento Antecipado (RA)                                                      
+Lançamento Padrão: 502, Descrição: Contas a Receber - Exclusao de Titulos Recebimento Antecipado                                                           
+Lançamento Padrão: 503, Descrição: Contas a Receber - Substituicao de Titulos Provisorios                                                                  
+Lançamento Padrão: 504, Descrição: Contas a Receber - Geracao de Titulos por Desdobramento                                                                 
+Lançamento Padrão: 505, Descrição: Contas a Receber - Exclusao de Titulos                                                                                  
+Lançamento Padrão: 506, Descrição: Contas a Receber - Inclusão Rateio Centro de Custo Multipla Natureza                                                    
+Lançamento Padrão: 507, Descrição: Contas a Receber - Cancelamento Rateio Centro de Custo Multipla Natureza                                                
+Lançamento Padrão: 508, Descrição: Contas a Pagar - Rateio Centro de Custo Multipla Natureza                                                               
+Lançamento Padrão: 509, Descrição: Contas a Pagar - Cancelamento Rateio Centro de Custo Multipla Natureza                                                  
+Lançamento Padrão: 51A, Descrição: Contas a Receber - Provisao para cobrancas duvidosas                                                                    
+Lançamento Padrão: 510, Descrição: Contas a Pagar - Inclusao de Titulos                                                                                    
+Lançamento Padrão: 511, Descrição: Contas a Pagar - Inclusao de Titulos com Rateio Simples                                                                 
+Lançamento Padrão: 512, Descrição: Contas a Pagar - Exclusao de Titulos com Rateio Simples                                                                 
+Lançamento Padrão: 513, Descrição: Contas a Pagar - Inclusao de Titulos Pagamento Antecipado (PA)                                                          
+Lançamento Padrão: 514, Descrição: Contas a Pagar - Exclusao Titulos Pagamento Antecipado (PA)                                                             
+Lançamento Padrão: 515, Descrição: Contas a Pagar - Exclusao de Titulos                                                                                    
+Lançamento Padrão: 516, Descrição: Movimento Bancario - Inclusao Movimento a Pagar com Rateio                                                              
+Lançamento Padrão: 517, Descrição: Movimento Bancario - Inclusao Movimento a Receber com Rateio                                                            
+Lançamento Padrão: 518, Descrição: Contas a Pagar - Baixa de Titulos por Vendor                                                                            
+Lançamento Padrão: 519, Descrição: Contas a Pagar - Cancelamento de Baixa de Titulos por Vendor                                                            
+Lançamento Padrão: 520, Descrição: Contas a Receber - Baixas de Titulos em Carteira                                                                        
+Lançamento Padrão: 521, Descrição: Contas a Receber - Baixas de Titulos Cobranca Simples                                                                   
+Lançamento Padrão: 522, Descrição: Contas a Receber - Baixas de Titulos Cobranca Descontada                                                                
+Lançamento Padrão: 523, Descrição: Contas a Receber - Baixas de Titulos Cobranca Caucionada                                                                
+Lançamento Padrão: 524, Descrição: Contas a Receber - Baixas de Titulos Cobranca Vinculada                                                                 
+Lançamento Padrão: 525, Descrição: Contas a Receber - Baixas de Titulos Cobranca Advogado                                                                  
+Lançamento Padrão: 526, Descrição: Contas a Receber - Baixas de Titulos Cobranca Judicial                                                                  
+Lançamento Padrão: 527, Descrição: Contas a Receber - Cancelamento de Baixas de Titulos                                                                    
+Lançamento Padrão: 528, Descrição: Contas a Receber - Baixas de Titulos Cobranca Caucionada Descontada                                                     
+Lançamento Padrão: 529, Descrição: Contas a Receber - Exclusao de Titulos gerado via Desdobramento                                                         
+Lançamento Padrão: 530, Descrição: Contas a Pagar - Baixa de Titulos                                                                                       
+Lançamento Padrão: 531, Descrição: Contas a Pagar - Cancelamento de Baixas de Titulos                                                                      
+Lançamento Padrão: 532, Descrição: Contas a Pagar - Baixas de Titulos por Bordero de Pagamento                                                             
+Lançamento Padrão: 533, Descrição: Contas a Pagar - Substituicao de Titulos Provisorios                                                                    
+Lançamento Padrão: 535, Descrição: Cancelamento da Compensação de titulos a Pagar / a Receber                                                              
+Lançamento Padrão: 536, Descrição: Baixas de titulos a Receber c/Distrib.em Multiplas Naturezas p/CC                                                       
+Lançamento Padrão: 537, Descrição: Baixas de titulos a Pagar c/Distr.em Mult.Naturezas p/CC                                                                
+Lançamento Padrão: 538, Descrição: Cancel.Baixas de titulos a Receber c/Distr.em Mult.Naturezas p/CC                                                       
+Lançamento Padrão: 539, Descrição: Cancel.Baixas de titulos a Pagar c/Distr.em Mult.Naturezas p/CC                                                         
+Lançamento Padrão: 540, Descrição: Contas a Receber - Transferencia de Titulos para Carteira                                                               
+Lançamento Padrão: 541, Descrição: Contas a Receber - Transferencia de Titulos para Cobranca Simples                                                       
+Lançamento Padrão: 542, Descrição: Contas a Receber - Transferencia de Titulos para Cobranca Descontada                                                    
+Lançamento Padrão: 543, Descrição: Contas a Receber - Transferencia de Titulos para Cobranca Caucionada                                                    
+Lançamento Padrão: 544, Descrição: Contas a Receber - Transferencia de Titulos Cobranca Vinculada                                                          
+Lançamento Padrão: 545, Descrição: Contas a Receber - Transferencia de Titulos para Cobranca Advogado                                                      
+Lançamento Padrão: 546, Descrição: Contas a Receber - Transferencia de Titulos para Cobranca Judicial                                                      
+Lançamento Padrão: 547, Descrição: Contas a Receber - Geração de Bordero Contas a Receber para Carteira                                                    
+Lançamento Padrão: 548, Descrição: Contas a Receber - Geração de Bordero Contas a Receber para Cobranca Simples                                            
+Lançamento Padrão: 549, Descrição: Contas a Receber - Geração de Bordero Contas a Receber para Cobranca Descontada                                         
+Lançamento Padrão: 550, Descrição: Contas a Receber - Geração de Bordero Contas a Receber para Cobranca Caucionada                                         
+Lançamento Padrão: 551, Descrição: Contas a Receber - Geração de Bordero Contas a Receber para Cobranca Vinculada                                          
+Lançamento Padrão: 552, Descrição: Contas a Receber - Geração de Bordero Contas a Receber para Cobranca Advogado                                           
+Lançamento Padrão: 553, Descrição: Contas a Receber - Geração de Bordero Contas a Receber para Cobranca Judicial                                           
+Lançamento Padrão: 554, Descrição: Contas a Receber - Cancelamento de Bordero Contas a Receber                                                             
+Lançamento Padrão: 555, Descrição: Contas a Receber - Transferencia de Titulos para Cobranca Caucionada Descontada                                         
+Lançamento Padrão: 556, Descrição: Contas a Receber - Geração de Bordero Contas a Receber para Cobranca Caucionada Descontada                              
+Lançamento Padrão: 54A, Descrição: Contas a Receber - Contabilização Constituição PDD                                                                      
+Lançamento Padrão: 54B, Descrição: Contas a Receber - Contabilização Reversão PDD                                                                          
+Lançamento Padrão: 54C, Descrição: Contas a Receber - Contabilização da Constituição PDD com Rateio por Item da Nota                                       
+Lançamento Padrão: 54D, Descrição: Contas a Receber - Contabilização Reversão da Constituição PDD com Rateio por Item da Nota                              
+Lançamento Padrão: 54E, Descrição: Contas a Receber - Contabilização Constituição PDD - PLS                                                                
+Lançamento Padrão: 54F, Descrição: Contas a Receber - Contabilização Reversão PDD - PLS                                                                    
+Lançamento Padrão: 557, Descrição: Movimento Bancario - Cancelamento de Movimento a Pagar com Rateio                                                       
+Lançamento Padrão: 558, Descrição: Movimento Bancario - Cancelamento de Movimento a Receber com Rateio                                                     
+Lançamento Padrão: 559, Descrição: Compensação de Cheques Recebidos                                                                                        
+Lançamento Padrão: 560, Descrição: Movimento Bancario - Transferencia Saida Banco Origem                                                                   
+Lançamento Padrão: 56A, Descrição: Movimento Bancário - Lançamento de ITF                                                                                  
+Lançamento Padrão: 56B, Descrição: Movimento Bancário - Lançamento de ITF (estorno)                                                                        
+Lançamento Padrão: 561, Descrição: Movimento Bancario - Transferencia Entra Banco Destino                                                                  
+Lançamento Padrão: 562, Descrição: Movimento Bancario - Inclusao de Movimento a Pagar                                                                      
+Lançamento Padrão: 563, Descrição: Movimento Bancario - Inclusao de Movimento a Receber/Cancelamento  da Ordem de Pago                                     
+Lançamento Padrão: 564, Descrição: Movimento Bancario - Cancelamento Movimento a Pagar                                                                     
+Lançamento Padrão: 565, Descrição: Movimento Bancario - Cancelamento Movimento a Receber/Estorno  da Ordem de Pago                                         
+Lançamento Padrão: 566, Descrição: Contas a Pagar - Geracao de Cheques sobre Titulos em aberto                                                             
+Lançamento Padrão: 567, Descrição: Contas a Pagar - Geracao de Cheques Avulsos                                                                             
+Lançamento Padrão: 568, Descrição: Contas a Pagar - Cancelamento de Cheque Avulso                                                                          
+Lançamento Padrão: 569, Descrição: Contas a Pagar - Redeposito de Cheque sobre Titulos em aberto                                                           
+Lançamento Padrão: 570, Descrição: Ordem de Pago - Inclusao de uma Ordem de Pago                                                                           
+Lançamento Padrão: 571, Descrição: Contas a Pagar - Cancelamento de Cheques sobre Titulos em aberto / Exclusao da Ordem de Pago                            
+Lançamento Padrão: 572, Descrição: Movimento Caixa Interno - Movimentos do Caixa Interno                                                                   
+Lançamento Padrão: 573, Descrição: Movimento Caixa Interno - Movimentos de Reposicao                                                                       
+Lançamento Padrão: 574, Descrição: Rechazar Cheques - Chile                                                                                                
+Lançamento Padrão: 575, Descrição: Recibo Diversos - Inclusao de um Recibo                                                                                 
+Lançamento Padrão: 576, Descrição: Recibo Diversos - Inclusao de um Recibo                                                                                 
+Lançamento Padrão: 577, Descrição: Contas a Pagar - Geracao de Titulo via desdobramento                                                                    
+Lançamento Padrão: 578, Descrição: Contas a Pagar - Exclusao de Titulo gerado via desdobramento                                                            
+Lançamento Padrão: 579, Descrição: Movimento Caixa Interno - Exclusao de um Movimento de Adiantamento / Despesa do Caixinha                                
+Lançamento Padrão: 57A, Descrição: Contas a Receber - Diferenca de Cambio a Receber                                                                        
+Lançamento Padrão: 57B, Descrição: Contas a Receber - Estorno de Diferenca de Cambio a Receber                                                             
+Lançamento Padrão: 57C, Descrição: Contas a Pagar - Diferenca de Cambio a Pagar                                                                            
+Lançamento Padrão: 57D, Descrição: Contas a Pagar - Estorno de Diferenca de Cambio a Pagar                                                                 
+Lançamento Padrão: 57E, Descrição: Movimento Caixa Interno - Estorno de Reposição                                                                          
+Lançamento Padrão: 580, Descrição: Aplicacões - Inclusão de Aplicacao Financeira                                                                           
+Lançamento Padrão: 581, Descrição: Aplicacões - Exclusao Aplicacao Financeira                                                                              
+Lançamento Padrão: 582, Descrição: Aplicacões - Apropriacao / Resgate de Emprestimo                                                                        
+Lançamento Padrão: 583, Descrição: Estorno de Compensação de Cheques Recebidos                                                                             
+Lançamento Padrão: 584, Descrição: Aplicacões - Estorno Apropriacao Aplicacao Financeira                                                                   
+Lançamento Padrão: 585, Descrição: Aplicacões - Resgate Aplicacao Financeira                                                                               
+Lançamento Padrão: 586, Descrição: Aplicacões - Estorno Emprestimo / Estorno do Resgate                                                                    
+Lançamento Padrão: 587, Descrição: Contas a Pagar - Geração de Faturas a Pagar                                                                             
+Lançamento Padrão: 588, Descrição: Contas a Receber - Cancelamento Compensacao de Titulos                                                                  
+Lançamento Padrão: 589, Descrição: Contas a Pagar - Cancelamento Compensacao de Titulos                                                                    
+Lançamento Padrão: 590, Descrição: Contas a Pagar - Geracao de Cheques sobre Titulos baixados                                                              
+Lançamento Padrão: 591, Descrição: Contas a Pagar - Cancelamento de Cheques sobre Titulos baixados                                                         
+Lançamento Padrão: 592, Descrição: Contas a Receber - Cancelamento Faturas a Receber                                                                       
+Lançamento Padrão: 593, Descrição: Contas a Pagar - Cancelamento Faturas a Pagar                                                                           
+Lançamento Padrão: 594, Descrição: Contas a Pagar/Receber - Compensacao entre Carteiras                                                                    
+Lançamento Padrão: 595, Descrição: Contas a Receber - Geração de Faturas a Receber                                                                         
+Lançamento Padrão: 596, Descrição: Contas a Receber - Compensacao Contas a Receber                                                                         
+Lançamento Padrão: 597, Descrição: Contas a Pagar - Compensacao Contas a Pagar                                                                             
+Lançamento Padrão: 598, Descrição: Variacao Monetaria - Contas a Receber                                                                                   
+Lançamento Padrão: 599, Descrição: Variacao Monetaria - Contas a Pagar                                                                                     
+Lançamento Padrão: 59A, Descrição: Estorno da Variacao Monetaria - Contas a Receber                                                                        
+Lançamento Padrão: 59B, Descrição: Estorno da Variacao Monetaria - Contas a Pagar                                                                          
+Lançamento Padrão: 5B1, Descrição: Ajuste a Valor Presente - Contas a Receber                                                                              
+Lançamento Padrão: 5B2, Descrição: Estorno do Ajuste a Valor Presente - Contas a Receber                                                                   
+Lançamento Padrão: 5B3, Descrição: Ajuste a Valor Presente - Contas a Pagar                                                                                
+Lançamento Padrão: 5B4, Descrição: Estorno do Ajuste a Valor Presente - Contas a Pagar                                                                     
+Lançamento Padrão: 5B5, Descrição: Estorno de AVP no Cancelamento da Inclusao - Contas a Receber                                                           
+Lançamento Padrão: 5B6, Descrição: Estorno de AVP no Cancelamento da Inclusao - Contas a Pagar                                                             
+Lançamento Padrão: 5B7, Descrição: Estorno de AVP no Cancelamento da Baixa - Contas a Receber                                                              
+Lançamento Padrão: 5B8, Descrição: Estorno de AVP no Cancelamento da Baixa - Contas a Pagar                                                                
+Lançamento Padrão: 5C4, Descrição: Apuração IRPJ/CSLL Lucro Real - Cabeçalho                                                                               
+Lançamento Padrão: 5C5, Descrição: Apuração IRPJ/CSLL Lucro Real - Item                                                                                    
+Lançamento Padrão: 5C6, Descrição: Estorno Apuração IRPJ/CSLL Lucro Real - Cabeçalho                                                                       
+Lançamento Padrão: 5C7, Descrição: Estorno Apuração IRPJ/CSLL Lucro Real - Item                                                                            
+Lançamento Padrão: 5B9, Descrição: Contas a Pagar - Baixa de Título de Crédito                                                                             
+Lançamento Padrão: 5BA, Descrição: Contas a Pagar - Baixa de Título de Débito                                                                              
+Lançamento Padrão: 5BB, Descrição: Contas a Pagar - Geração de adiantamento (PA)                                                                           
+Lançamento Padrão: 5BC, Descrição: Contas a Pagar - Documento Próprio Mediato                                                                              
+Lançamento Padrão: 5BD, Descrição: Contas a Pagar - Valores e transferências Imediato                                                                      
+Lançamento Padrão: 5BE, Descrição: Contas a Pagar - Documentos de Terceiro                                                                                 
+Lançamento Padrão: 5BF, Descrição: Contas a Pagar - Documentos de Retenção                                                                                 
+Lançamento Padrão: 5BG, Descrição: Contas a Pagar - Cancelamento de Baixa de Título de Crédito                                                             
+Lançamento Padrão: 5BH, Descrição: Contas a Pagar - Cancelamento de Baixa de Título de Débito                                                              
+Lançamento Padrão: 5BI, Descrição: Contas a Pagar - Cancelamento de Geração de Adiantamento (PA)                                                           
+Lançamento Padrão: 5BJ, Descrição: Contas a Pagar - Cancelamento de Documentos Próprios Mediato                                                            
+Lançamento Padrão: 5BK, Descrição: Contas a Pagar - Cancelamento de Valores e transferências Imediato                                                      
+Lançamento Padrão: 5BL, Descrição: Contas a Pagar - Cancelamento de Documentos de Terceiro                                                                 
+Lançamento Padrão: 5BM, Descrição: Contas a Pagar - Cancelamento de Documentos de Retenção                                                                 
+Lançamento Padrão: 5BN, Descrição: Contas a Receber - Baixa de Título Rec Crédito                                                                          
+Lançamento Padrão: 5BO, Descrição: Contas a Receber - Baixa de Título Rec Débito                                                                           
+Lançamento Padrão: 5BP, Descrição: Contas a Receber - Recibo Antecipado Gerado (RA)                                                                        
+Lançamento Padrão: 5BQ, Descrição: Contas a Receber - Cheque                                                                                               
+Lançamento Padrão: 5BR, Descrição: Contas a Receber - Nota Promissória                                                                                     
+Lançamento Padrão: 5BS, Descrição: Contas a Receber - Efetivo                                                                                              
+Lançamento Padrão: 5BT, Descrição: Contas a Receber - Transferências                                                                                       
+Lançamento Padrão: 5BU, Descrição: Contas a Receber - Retenção                                                                                             
+Lançamento Padrão: 5BV, Descrição: Contas a Receber - Cancel. de Baixa de Título Crédito                                                                   
+Lançamento Padrão: 5BX, Descrição: Contas a Receber - Cancel. de Baixa de Título Débito                                                                    
+Lançamento Padrão: 5BW, Descrição: Contas a Receber - Cancelamento de Recibo Antecipado Gerado (RA)                                                        
+Lançamento Padrão: 5BY, Descrição: Contas a Receber - Cancelamento de Cheque                                                                               
+Lançamento Padrão: 5BZ, Descrição: Contas a Receber - Cancelamento de Nota Promissória                                                                     
+Lançamento Padrão: 5C1, Descrição: Contas a Receber - Cancelamento de Transferência                                                                        
+Lançamento Padrão: 5C2, Descrição: Contas a Receber - Cancelamento de Efetivo                                                                              
+Lançamento Padrão: 5C3, Descrição: Contas a Receber - Cancelamento de Retenção                                                                             
+Lançamento Padrão: 8B3, Descrição: Viagens - Prestação de Contas                                                                                           
+Lançamento Padrão: 8B4, Descrição: Viagens - Estorno da Prestação de Contas                                                                                
+Lançamento Padrão: 8B5, Descrição: Viagens - Cabeçalho Prestação de Contas                                                                                 
+Lançamento Padrão: 8B6, Descrição: Viagens - Estorno do Cabeçalho da Prestação de Contas                                                                   
+Lançamento Padrão: 683, Descrição: Compras - Inclusão de Notas Fiscais MAN/AUT.                                                                            
+Lançamento Padrão: 684, Descrição: Compras - Inclusão de Nota de Crédito                                                                                   
+Lançamento Padrão: 685, Descrição: Compras - Inclusão de Nota de Débito                                                                                    
+Lançamento Padrão: 686, Descrição: Compras - Inclusão de Remito de Entrada                                                                                 
+Lançamento Padrão: 687, Descrição: Compras - Exclusão de Notas Fiscais MAN/AUT.                                                                            
+Lançamento Padrão: 688, Descrição: Compras - Exclusão de Nota de Crédito                                                                                   
+Lançamento Padrão: 689, Descrição: Compras - Exclusão de Nota de Débito                                                                                    
+Lançamento Padrão: 68A, Descrição: Faturamento - Inclusão de Notas Fiscais MAN/AUT.                                                                        
+Lançamento Padrão: 68B, Descrição: Faturamento - Inclusão de Nota de Crédito                                                                               
+Lançamento Padrão: 68C, Descrição: Faturamento - Inclusão de Nota de Débito                                                                                
+Lançamento Padrão: 68D, Descrição: Faturamento - Inclusão de Remito de Saída                                                                               
+Lançamento Padrão: 68E, Descrição: Faturamento - Exclusão de Nota Man/Aut.                                                                                 
+Lançamento Padrão: 68F, Descrição: Faturamento - Exclusão de Nota de Crédito                                                                               
+Lançamento Padrão: 68G, Descrição: Faturamento - Exclusão de Nota de Débito                                                                                
+Lançamento Padrão: 68H, Descrição: Faturamento - Exclusão de Remito de Saída                                                                               
+Lançamento Padrão: 68I, Descrição: Faturamento - Inclusão de Notas Fiscais MAN/AUT.                                                                        
+Lançamento Padrão: 68J, Descrição: Faturamento - Inclusão de Nota de Crédito                                                                               
+Lançamento Padrão: 68K, Descrição: Faturamento - Inclusão de Nota de Débito                                                                                
+Lançamento Padrão: 68L, Descrição: Faturamento - Inclusão de Remito de Saída                                                                               
+Lançamento Padrão: 68M, Descrição: Faturamento - Exclusão de Nota Man/Aut.                                                                                 
+Lançamento Padrão: 68N, Descrição: Faturamento - Exclusão de Nota de Crédito                                                                               
+Lançamento Padrão: 68O, Descrição: Faturamento - Exclusão de Nota de Débito                                                                                
+Lançamento Padrão: 68P, Descrição: Faturamento - Exclusão de Remito de Saída                                                                               
+Lançamento Padrão: 605, Descrição: Apuracao de PIS - Inclusão                                                                                              
+Lançamento Padrão: 606, Descrição: Apuracao de COFINS - Inclusão                                                                                           
+Lançamento Padrão: 607, Descrição: NF Manual Entr./Saída                                                                                                   
+Lançamento Padrão: 608, Descrição: Apuracao de COFINS - Estorno                                                                                            
+Lançamento Padrão: 609, Descrição: Outros Documentos - F100 - EFD Contribuições - Inclusão                                                                 
+Lançamento Padrão: 611, Descrição: Apuracao de PIS - Estorno                                                                                               
+Lançamento Padrão: 6A7, Descrição: Documento de Entrada Manual - Inclusão de Documento Itens                                                               
+Lançamento Padrão: 6B7, Descrição: Documento de Saída Manual - Inclusão de Documento Itens                                                                 
+Lançamento Padrão: 6A8, Descrição: Documento de Entrada Manual - Exclusão de Documento Itens                                                               
+Lançamento Padrão: 6B8, Descrição: Documento de Saída Manual - Exclusão de Documento Itens                                                                 
+Lançamento Padrão: 6AA, Descrição: Notas de VAT de venda - Cabeçalho                                                                                       
+Lançamento Padrão: 6AB, Descrição: Notas de VAT de venda - Itens                                                                                           
+Lançamento Padrão: 6AC, Descrição: Exclusão de notas de VAT de venda - Cabeçalho                                                                           
+Lançamento Padrão: 6AD, Descrição: Exclusão de notas de VAT de venda - Itens                                                                               
+Lançamento Padrão: 6A9, Descrição: Outros Documentos - F100 - EFD Contribuições - Estorno                                                                  
+Lançamento Padrão: 610, Descrição: Documento de Saida - Inclusão de Documento Itens                                                                        
+Lançamento Padrão: 613, Descrição: Documento de Saída - Inclusão de Documento Rateio Itens                                                                 
+Lançamento Padrão: 620, Descrição: Documento de Saida - Inclusão de Documento Total                                                                        
+Lançamento Padrão: 630, Descrição: Documento de Saida - Exclusão de Documento Itens                                                                        
+Lançamento Padrão: 633, Descrição: Documento de Saída - Exclusão de Documento Rateio Itens                                                                 
+Lançamento Padrão: 635, Descrição: Documento de Saida - Exclusão de Documento Total                                                                        
+Lançamento Padrão: 640, Descrição: Documento de Entrada - Inclusão de Documento Devolução/Beneficiamento Itens                                             
+Lançamento Padrão: 641, Descrição: Documento de Entrada - Inclusão de Documento Devolução/Beneficiamento Itens Rateio                                      
+Lançamento Padrão: 642, Descrição: Documento de Entrada - Inclusão de Documento Devolução/Beneficiamento Total                                             
+Lançamento Padrão: 650, Descrição: Documento de Entrada - Inclusão de Documento Entrada Itens                                                              
+Lançamento Padrão: 651, Descrição: Documento de Entrada - Inclusão de Documento Entrada Itens Rateio                                                       
+Lançamento Padrão: 652, Descrição: Pedido de Compras - Inclusão de Pedidos Itens                                                                           
+Lançamento Padrão: 655, Descrição: Documento de Entrada - Exclusão de Documento Entrada Itens                                                              
+Lançamento Padrão: 656, Descrição: Documento de Entrada - Exclusão de Documento Entrada Itens Rateio                                                       
+Lançamento Padrão: 657, Descrição: Pedido de Compras - Exclusão de Pedidos Itens                                                                           
+Lançamento Padrão: 658, Descrição: Pedido de Compras - Eliminação de Resíduos - Itens                                                                      
+Lançamento Padrão: 659, Descrição: Pedido de Compras - Rateio do Pedido de Compra                                                                          
+Lançamento Padrão: 65A, Descrição: Pedido de Compras - Exclusao/Estorno do Rateio do Pedido de Compra                                                      
+Lançamento Padrão: 65B, Descrição: Pedido de Compras - Pedido de Compra por Edital                                                                         
+Lançamento Padrão: 660, Descrição: Documento de Entrada - Inclusão de Documento Entrada Total                                                              
+Lançamento Padrão: 661, Descrição: Documento de Entrada - Inclusão de Titulos a Pagar                                                                      
+Lançamento Padrão: 665, Descrição: Documento de Entrada - Exclusão de Documento Entrada Total                                                              
+Lançamento Padrão: 666, Descrição: Movimento de Estoques - Saida de Produtos                                                                               
+Lançamento Padrão: 667, Descrição: Movimento de Estoques - Saida de Produtos ( Antes de Atualizar o Custo )                                                
+Lançamento Padrão: 668, Descrição: Movimento de Estoques - Entrada de Produtos                                                                             
+Lançamento Padrão: 669, Descrição: Movimento de Estoques - Entrada de Produtos ( Antes de Atualizar o Custo)                                               
+Lançamento Padrão: 670, Descrição: Movimento de Estoques - Transferencia Origem                                                                            
+Lançamento Padrão: 672, Descrição: Movimento de Estoques - Transferencia Destino                                                                           
+Lançamento Padrão: 674, Descrição: Movimento de Estoques - Inventário Saida                                                                                
+Lançamento Padrão: 676, Descrição: Movimento de Estoques - Inventário Entrada                                                                              
+Lançamento Padrão: 678, Descrição: Documento de Saida - Custo de Mercadoria Vendida                                                                        
+Lançamento Padrão: 679, Descrição: Movimento de Estoques - Entrada de Produtos ( Apropriação Indireta )                                                    
+Lançamento Padrão: 680, Descrição: Movimento de Estoques - Saida de Produtos ( Apropriação Indireta )                                                      
+Lançamento Padrão: 681, Descrição: Documento de Entrada - Compra / Remessa de Terceiros Itens                                                              
+Lançamento Padrão: 682, Descrição: Documento de Entrada - Retorno de Poder Terceiros Itens                                                                 
+Lançamento Padrão: 691, Descrição: Caucionamento - Exclusão de de cauções                                                                                  
+Lançamento Padrão: 692, Descrição: Caucionamento - Baixa de cauções                                                                                        
+Lançamento Padrão: 693, Descrição: Gestão de Contratos - Cronograma Contábil - Apropriação das Parcelas                                                    
+Lançamento Padrão: 694, Descrição: Gestão de Contratos - Inclusão do Contrato                                                                              
+Lançamento Padrão: 69G, Descrição: Gestão de Contratos - Aprovação da Revisão do Contrato                                                                  
+Lançamento Padrão: 69H, Descrição: Gestão de Contratos - Encerramento da medição por item norma IFRS 15 (bens e serviços)  69H                            
+Lançamento Padrão: 69I, Descrição: Gestão de Contratos - Estorno da medição por item norma IFRS 15 (bens e serviços)  69I                                 
+Lançamento Padrão: 695, Descrição: Gestão de Contratos - Retenção do Contrato                                                                              
+Lançamento Padrão: 696, Descrição: Gestão de Contratos - Exclusão do Contrato                                                                              
+Lançamento Padrão: 697, Descrição: Gestão de Contratos - Encerramento da Medição                                                                           
+Lançamento Padrão: 698, Descrição: Gestão de Contratos - Encerramento da Medição/Automatico                                                                
+Lançamento Padrão: 699, Descrição: Gestão de Contratos - Estorno da Medição                                                                                
+Lançamento Padrão: 69A, Descrição: Gestão de Contratos - Encerramento da Medicao: Itens do Contrato                                                        
+Lançamento Padrão: 69B, Descrição: Gestão de Contratos - Estorno da Medicao: Itens do Contrato                                                             
+Lançamento Padrão: 69C, Descrição: Gestão de Contratos - Rateio Itens Contrato s/ Planilha no Encerramento da Medicao                                      
+Lançamento Padrão: 69D, Descrição: Gestão de Contratos - Rateio Itens Contrato s/ Planilha no Estorno da Medicao                                           
+Lançamento Padrão: 69E, Descrição: Gestão de Contratos - Rateio Itens Contrato c/ Planilha no Encerramento da Medicao                                      
+Lançamento Padrão: 69F, Descrição: Gestão de Contratos - Rateio Itens Contrato c/ Planilha no Estorno da Medicao                                           
+Lançamento Padrão: 69J, Descrição: Gestão de Contratos - Cronograma contábil - Estorno apropriação das Parceças                                            
+Lançamento Padrão: 69K, Descrição: Desfazer revisão                                                                                                        
+Lançamento Padrão: 69L, Descrição: Gestão de Contratos - Inclusão de Contrato Vigente (Por Item de Planilha)                                               
+Lançamento Padrão: 69M, Descrição: Gestão de Contratos - Estorno de Contrato Vigente (Por Item de Planilha)                                                
+Lançamento Padrão: 69N, Descrição: Gestão de Contratos - Aprovação de Revisão (Por Item de Planilha)                                                       
+Lançamento Padrão: 69O, Descrição: Gestão de Contratos - Desfazer Revisão (Por Item de Planilha)                                                           
+Lançamento Padrão: 710, Descrição: Apuracao de ICMS - Inclusão                                                                                             
+Lançamento Padrão: 711, Descrição: Apuracao de ICMS - Estorno                                                                                              
+Lançamento Padrão: 712, Descrição: Apuracao de ICMS Compensação de Saldo - Inclusão                                                                        
+Lançamento Padrão: 713, Descrição: Apuracao de ICMS Compensação de Saldo - Estorno                                                                         
+Lançamento Padrão: 720, Descrição: Apuracao de IPI - Inclusão                                                                                              
+Lançamento Padrão: 721, Descrição: Apuracao de IPI - Estorno                                                                                               
+Lançamento Padrão: 750, Descrição: Apuracao de ISS - Inclusão                                                                                              
+Lançamento Padrão: 751, Descrição: Apuracao de ISS - Estorno                                                                                               
+Lançamento Padrão: 752, Descrição: SPED PIS/COFINS - Inclusão                                                                                              
+Lançamento Padrão: 753, Descrição: SPED PIS/COFINS - Exclusão                                                                                              
+Lançamento Padrão: 755, Descrição: Apropriação CIAP                                                                                                        
+Lançamento Padrão: 756, Descrição: Estorno CIAP                                                                                                            
+Lançamento Padrão: 757, Descrição: Diferimento de PIS mesmo período - Inclusão                                                                             
+Lançamento Padrão: 758, Descrição: Diferimento de COFINS mesmo período - Inclusão                                                                          
+Lançamento Padrão: 759, Descrição: Diferimento de PIS período anterior - Inclusão                                                                          
+Lançamento Padrão: 760, Descrição: Diferimento de COFINS mesmo período anterior - Inclusão                                                                 
+Lançamento Padrão: 761, Descrição: Diferimento de PIS mesmo período - Estorno                                                                              
+Lançamento Padrão: 762, Descrição: Diferimento de COFINS mesmo período - Estorno                                                                           
+Lançamento Padrão: 763, Descrição: Diferimento de PIS período anterior - Estorno                                                                           
+Lançamento Padrão: 764, Descrição: Diferimento de COFINS mesmo período anterior - Estorno                                                                  
+Lançamento Padrão: 765, Descrição: CPRB - Inclusão                                                                                                         
+Lançamento Padrão: 766, Descrição: CPRB - Estorno                                                                                                          
+Lançamento Padrão: 767, Descrição: Apuração Tributos Genéricos - Inclusão                                                                                  
+Lançamento Padrão: 768, Descrição: Apuração Tributos Genéricos - Estorno                                                                                   
+Lançamento Padrão: 770, Descrição: FISCAL - Inclusão manual do Bem no CIAP                                                                                 
+Lançamento Padrão: 771, Descrição: FISCAL - Exclusão manual do Bem no CIAP                                                                                 
+Lançamento Padrão: 801, Descrição: Ativo Fixo - Aquisicao de Bem                                                                                           
+Lançamento Padrão: 802, Descrição: Ativo Fixo - Aquisicao - Reavaliacao                                                                                    
+Lançamento Padrão: 803, Descrição: Ativo Fixo - Aquisicao - Adiantamento                                                                                   
+Lançamento Padrão: 804, Descrição: Ativo Fixo - Aquisicao - Lei 8.200                                                                                      
+Lançamento Padrão: 805, Descrição: Ativo Fixo - Exclusao Aquisicao do Bem                                                                                  
+Lançamento Padrão: 806, Descrição: Ativo Fixo - Exclusao - Reavaliacao                                                                                     
+Lançamento Padrão: 807, Descrição: Ativo Fixo - Exclusao - Adiantamento                                                                                    
+Lançamento Padrão: 808, Descrição: Ativo Fixo - Exclusao - Lei 8.200                                                                                       
+Lançamento Padrão: 810, Descrição: Ativo Fixo - Baixa Aquisicao                                                                                            
+Lançamento Padrão: 811, Descrição: Ativo Fixo - Baixa Reavaliacao                                                                                          
+Lançamento Padrão: 812, Descrição: Ativo Fixo - Baixa - Adiantamentos                                                                                      
+Lançamento Padrão: 813, Descrição: Ativo Fixo - Baixa Lei 8.200                                                                                            
+Lançamento Padrão: 814, Descrição: Ativo Fixo - Cancelamento Baixa Aquisicao                                                                               
+Lançamento Padrão: 815, Descrição: Ativo Fixo - Cancelamento Baixa Reavaliacao                                                                             
+Lançamento Padrão: 816, Descrição: Ativo Fixo - Cancelamento Baixa Adiantamento                                                                            
+Lançamento Padrão: 817, Descrição: Ativo Fixo - Cancelamento Baixa Lei 8.200                                                                               
+Lançamento Padrão: 820, Descrição: Ativo Fixo - Calculo da Depreciacao                                                                                     
+Lançamento Padrão: 821, Descrição: Ativo Fixo - Ampliacao                                                                                                  
+Lançamento Padrão: 822, Descrição: Ativo Fixo - Cancelamento de Ampliacao                                                                                  
+Lançamento Padrão: 823, Descrição: Ativo Fixo - Cálculo de depreciação: rateio de despesas                                                                 
+Lançamento Padrão: 825, Descrição: Ativo Fixo - Descalculo                                                                                                 
+Lançamento Padrão: 827, Descrição: Ativo Fixo - Ajuste Inventario                                                                                          
+Lançamento Padrão: 828, Descrição: Ativo Fixo - Estorno do cálculo da depreciação: rateio de despesas                                                      
+Lançamento Padrão: 850, Descrição: Ativo Fixo - Ajuste por inflação - Calculo do Ajuste (Argentina)                                                        
+Lançamento Padrão: 851, Descrição: Ativo Fixo - Ajuste por inflação - Cancelamento do calculo do Ajuste (Argentina)                                        
+Lançamento Padrão: 860, Descrição: Ativo Fixo - Ajuste a Valor Presente - Constituição                                                                     
+Lançamento Padrão: 861, Descrição: Ativo Fixo - Ajuste a Valor Presente - Apropriação                                                                      
+Lançamento Padrão: 862, Descrição: Ativo Fixo - Ajuste a Valor Presente - Baixa de apropriação                                                             
+Lançamento Padrão: 863, Descrição: Ativo Fixo - Ajuste a Valor Presente - Baixa                                                                            
+Lançamento Padrão: 864, Descrição: Ativo Fixo - Ajuste a Valor Presente - Realização                                                                       
+Lançamento Padrão: 865, Descrição: Ativo Fixo - Ajuste a Valor Presente - Baixa de realização                                                              
+Lançamento Padrão: 866, Descrição: Ativo Fixo - Ajuste a Valor Presente - Diferenca por revisao                                                            
+Lançamento Padrão: 867, Descrição: Ativo Fixo - Ajuste a Valor Presente - Cancelamento de constituição                                                     
+Lançamento Padrão: 868, Descrição: Ativo Fixo - Ajuste a Valor Presente - Cancelamento de AVP - Baixa                                                      
+Lançamento Padrão: 870, Descrição: Ativo Fixo - Apontamento de estimativa de produção                                                                      
+Lançamento Padrão: 871, Descrição: Ativo Fixo - Apontamento de revisão da estimativa de produção                                                           
+Lançamento Padrão: 872, Descrição: Ativo Fixo - Apontamento de produção                                                                                    
+Lançamento Padrão: 873, Descrição: Ativo Fixo - Apontamento de encerramento de produção                                                                    
+Lançamento Padrão: 874, Descrição: Ativo Fixo - Apontamento de complemento de produção                                                                     
+Lançamento Padrão: 875, Descrição: Ativo Fixo - Estorno de apontamento de estimativa de produção                                                           
+Lançamento Padrão: 876, Descrição: Ativo Fixo - Estorno de apontamento de revisão de estimativa de produção                                                
+Lançamento Padrão: 877, Descrição: Ativo Fixo - Estorno de apontamento de produção                                                                         
+Lançamento Padrão: 878, Descrição: Ativo Fixo - Estorno de apontamento de encerramento de produção                                                         
+Lançamento Padrão: 879, Descrição: Ativo Fixo - Estorno de apontamento de complemento de produção                                                          
+Lançamento Padrão: 87A, Descrição: Ativo Fixo - Apontamento de produção com rateio                                                                         
+Lançamento Padrão: 87B, Descrição: Ativo Fixo - Estorno de apontamento de produção com rateio                                                              
+Lançamento Padrão: 845, Descrição: Ativo Fixo - Aquisicao - Lei 8.200 (Tipo do Ativo - 0                                                                   
+Lançamento Padrão: 846, Descrição: Ativo Fixo - Exclusao - Lei 8.200 (Tipo do Ativo - 06                                                                   
+Lançamento Padrão: 847, Descrição: Ativo Fixo - Baixa Lei 8.200 (Tipo do Ativo - á06)                                                                      
+Lançamento Padrão: 848, Descrição: Ativo Fixo - Cancelamento da Baixa (Tipo do Ativo - 0                                                                   
+Lançamento Padrão: 80A, Descrição: Ativo Fixo - Inclusão de outros tipos de Ativo                                                                          
+Lançamento Padrão: 80B, Descrição: Ativo Fixo - Exclusão de outros tipos de Ativo                                                                          
+Lançamento Padrão: 80C, Descrição: Ativo Fixo - Aquisição de Bem por conversão                                                                             
+Lançamento Padrão: 80D, Descrição: Ativo Fixo - Exclusão Aquisição do Bem por conversão                                                                    
+Lançamento Padrão: 80E, Descrição: Ativo Fixo - Reavaliação                                                                                                
+Lançamento Padrão: 80F, Descrição: Ativos Fixos - Estorno de Reavaliação                                                                                   
+Lançamento Padrão: 81A, Descrição: Ativo Fixo - Baixa de outros tipos de Ativo                                                                             
+Lançamento Padrão: 81B, Descrição: Ativo Fixo - Cancelamento da baixa de outros tipos de Ativo                                                             
+Lançamento Padrão: 81C, Descrição: Ativo Fixo - Baixa por conversão                                                                                        
+Lançamento Padrão: 81D, Descrição: Ativo Fixo - Cancelamento Baixa Aquisição por conversão                                                                 
+Lançamento Padrão: 81E, Descrição: Ativo Fixo - Baixa de ativo: rateio de despesas                                                                         
+Lançamento Padrão: 81F, Descrição: Ativo Fixo - Cancelamento da baixa de ativo: rateio de despesas                                                         
+Lançamento Padrão: 830, Descrição: Ativo Fixo - Transferencia contabil                                                                                     
+Lançamento Padrão: 833, Descrição: Ativo Fixo - Transferencia contabil - Movimento                                                                         
+Lançamento Padrão: 83A, Descrição: Ativo Fixo - Cancelamento de Transferência Contábil Orig.                                                               
+Lançamento Padrão: 83B, Descrição: Ativo Fixo - Cancelamento de Transferência Contábil Dest.                                                               
+Lançamento Padrão: 831, Descrição: Ativo Fixo - Transferencia contabil entre filiais (origem)                                                              
+Lançamento Padrão: 832, Descrição: Ativo Fixo - Transferencia contabil entre filiais (destino)                                                             
+Lançamento Padrão: 835, Descrição: Ativo Fixo - Aquisicao por transferencia                                                                                
+Lançamento Padrão: 836, Descrição: Ativo Fixo - Cancelamento da Aquisicao por transferencia                                                                
+Lançamento Padrão: 890, Descrição: Ativo Fixo - Simulação Depreciação - Bens Reais                                                                         
+Lançamento Padrão: 892, Descrição: Ativo Fixo - Estorno Simulação Depreciação - Bens Reais                                                                 
+Lançamento Padrão: 891, Descrição: Ativo Fixo - Simulação Depreciação - Bens Modificadores                                                                 
+Lançamento Padrão: 893, Descrição: Ativo Fixo - Estorno Simulação Depreciação - Bens Modificadores                                                         
+Lançamento Padrão: 880, Descrição: Ativo Fixo - Baixa de provisão                                                                                          
+Lançamento Padrão: 881, Descrição: Ativo Fixo - Movimentos de provisão                                                                                     
+Lançamento Padrão: 882, Descrição: Ativo Fixo - Estorno de movimentos de provisão                                                                          
+Lançamento Padrão: 883, Descrição: Ativo Fixo - Revisão de movimentos de provisão                                                                          
+Lançamento Padrão: 884, Descrição: Ativo Fixo - Estorno de efetivação de realização                                                                        
+Lançamento Padrão: 8A0, Descrição: Ativo Fixo - Cancelamento de transferência de filial (destino)                                                          
+Lançamento Padrão: 8A1, Descrição: Ativo Fixo - Cancelamento de transferência de filial (origem)                                                           
+Lançamento Padrão: 8B1, Descrição: Apuração de Resultado Contábil de Contrato de projeto                                                                   
+Lançamento Padrão: 8B2, Descrição: Estorno de Apuração de Resultado Contábil de Contrato de Projeto                                                        
+Lançamento Padrão: 8A2, Descrição: Ativo Fixo - Colocar em Operação                                                                                        
+Lançamento Padrão: 8A3, Descrição: Ativo Fixo - Reversão Colocar em Operação                                                                               
+Lançamento Padrão: 8A6, Descrição: Ativo fixo - Conservação                                                                                                
+Lançamento Padrão: 8A7, Descrição: Ativo fixo - Desconservação                                                                                             
+Lançamento Padrão: 8A8, Descrição: Ativo Fixo - Estorno de Conservação                                                                                     
+Lançamento Padrão: 8A9, Descrição: Ativo Fixo - Estorno de Desconservação                                                                                  
+Lançamento Padrão: 901, Descrição: TMS - Inclusão de movimento de custo de transporte por data de baixa                                                    
+Lançamento Padrão: 902, Descrição: TMS - Estorno de movimento de custo de transporte por data de baixa                                                     
+Lançamento Padrão: 903, Descrição: TMS - Inclusão de movimento de custo de transporte por data de emissão                                                  
+Lançamento Padrão: 904, Descrição: TMS - Estorno de movimento de custo de transporte por data de emissão                                                   
+Lançamento Padrão: 950, Descrição: Documento de Entrada EIC - Inclusão de Itens                                                                            
+Lançamento Padrão: 955, Descrição: Documento de Entrada EIC - Exclusao de Itens                                                                            
+Lançamento Padrão: 965, Descrição: Direitos Autorais - Apropriação dos direitos autorais                                                                   
+Lançamento Padrão: 970, Descrição: Gestao Advocatícia - Geração de Honorários - Cabeçalho da Fatura                                                        
+Lançamento Padrão: 971, Descrição: Gestao Advocatícia - Geração de Honorários - Itens da Fatura                                                            
+Lançamento Padrão: 972, Descrição: Gestao Advocatícia - Geração de Despesas - Itens da Fatura                                                              
+Lançamento Padrão: 973, Descrição: Gestao Advocatícia - Geração de Eventos - Itens da Fatura                                                               
+Lançamento Padrão: 974, Descrição: Gestao Advocatícia - Estorno de Honorários - Cabeçalho da Fatura                                                        
+Lançamento Padrão: 975, Descrição: Gestao Advocatícia - Estorno de Honorários - Itens da Fatura                                                            
+Lançamento Padrão: 976, Descrição: Gestao Advocatícia - Estorno de Despesas - Itens da Fatura                                                              
+Lançamento Padrão: 977, Descrição: Gestao Advocatícia - Estorno de Eventos - Itens da Fatura                                                               
+Lançamento Padrão: 980, Descrição: Gestao Advocatícia - Geração de Despesas, Contas à Pagar - Cabeçalho da Fatura                                          
+Lançamento Padrão: 981, Descrição: Gestao Advocatícia - Gesrção de Despesas, Contas à Pagar - Itens da Fatura                                              
+Lançamento Padrão: 984, Descrição: Gestao Advocatícia - Estorno de Despesas, Contas à Pagar - Cabeçalho da Fatura                                          
+Lançamento Padrão: 985, Descrição: Gestao Advocatícia - Estorno de Despesas, Contas à Pagar - Itens da Fatura                                              
+Lançamento Padrão: A01, Descrição: Folha de Pagamento - Salarios a Pagar                                                                                   
+Lançamento Padrão: A02, Descrição: Folha de Pagamento - Ferias                                                                                             
+Lançamento Padrão: A03, Descrição: Folha de Pagamento - Salario Familia                                                                                    
+Lançamento Padrão: A04, Descrição: Folha de Pagamento - Salario Maternidade                                                                                
+Lançamento Padrão: A05, Descrição: Folha de Pagamento - Pro-Labore                                                                                         
+Lançamento Padrão: B01, Descrição: Folha de Pagamento - INSS Empregados                                                                                    
+Lançamento Padrão: B02, Descrição: Folha de Pagamento - IRRF                                                                                               
+Lançamento Padrão: B03, Descrição: Folha de Pagamento - Assistencia Medica                                                                                 
+Lançamento Padrão: B04, Descrição: Folha de Pagamento - Contribuicao Sindical                                                                              
+Lançamento Padrão: B05, Descrição: Folha de Pagamento - Faltas                                                                                             
+Lançamento Padrão: B06, Descrição: Folha de Pagamento - Aviso Previo (Desconto)                                                                            
+Lançamento Padrão: B07, Descrição: Folha de Pagamento - Outros Descontos                                                                                   
+Lançamento Padrão: B08, Descrição: Folha de Pagamento - Pensao Alimenticia                                                                                 
+Lançamento Padrão: B09, Descrição: Folha de Pagamento - Vale-Transporte                                                                                    
+Lançamento Padrão: B10, Descrição: Folha de Pagamento - Desc. Insuficiencia de Saldo                                                                       
+Lançamento Padrão: C01, Descrição: Folha de Pagamento - INSS Empresa                                                                                       
+Lançamento Padrão: C02, Descrição: Folha de Pagamento - FGTS                                                                                               
+Lançamento Padrão: C03, Descrição: Folha de Pagamento - Provisao de Ferias                                                                                 
+Lançamento Padrão: C04, Descrição: Folha de Pagamento - Encargos Provisao de Ferias                                                                        
+Lançamento Padrão: C05, Descrição: Folha de Pagamento - Provisao de 13o Salario                                                                            
+Lançamento Padrão: C06, Descrição: Folha de Pagamento - Encargos de Provisao de 13o Salario                                                                
+Lançamento Padrão: 700, Descrição: Loja - Venda                                                                                                            
+Lançamento Padrão: 701, Descrição: Loja - Cancelamento de Venda                                                                                            
+Lançamento Padrão: 702, Descrição: Loja - Factura Global                                                                                                   
+Lançamento Padrão: 703, Descrição: Loja - NF sobre Cupom                                                                                                   
+Lançamento Padrão: 704, Descrição: Loja - Troca e Devolução                                                                                                
+Lançamento Padrão: 612, Descrição: Pedido de Venda - Inclusão de Documento Itens                                                                           
+Lançamento Padrão: 614, Descrição: Pedido de Vendas - Eliminação de Resíduos - Itens                                                                       
+Lançamento Padrão: 621, Descrição: Pedido de Venda - Inclusão de Documento Total                                                                           
+Lançamento Padrão: 632, Descrição: Pedido de Venda - Exclusão de Documento Itens                                                                           
+Lançamento Padrão: 636, Descrição: Pedido de Venda - Exclusão de Documento Total                                                                           
+Lançamento Padrão: 9A0, Descrição: PLS - Inclusao Contas a Receber-Antes BM1                                                                               
+Lançamento Padrão: 9A1, Descrição: PLS - Inclusao Conas a Receber-a Cada BM1                                                                               
+Lançamento Padrão: 9A8, Descrição: PLS - Inclusao Contas a Receber-Apos BM1                                                                                
+Lançamento Padrão: 9AB, Descrição: PLS - EXCLUSÃO CTAS RECEBER-A CADA BMN                                                                                  
+Lançamento Padrão: 9AG, Descrição: PLS - INCL.CTAS PAGAR-ANTES BMS                                                                                         
+Lançamento Padrão: 9AH, Descrição: PLS - INCL.CTAS PAGAR-A CADA BMS DO BD7                                                                                 
+Lançamento Padrão: 9AI, Descrição: PLS - INCL.CTAS PAGAR-A CADA BMS DO BBC                                                                                 
+Lançamento Padrão: 9AJ, Descrição: PLS - INCL.CTAS PAGAR-A CADA BMS DO BGQ                                                                                 
+Lançamento Padrão: 9AK, Descrição: PLS - INCL.CTAS PAGAR-A CADA BMS DO BCE                                                                                 
+Lançamento Padrão: 9AL, Descrição: PLS - INCL.CTAS PAGAR-A CADA BMR                                                                                        
+Lançamento Padrão: 9AM, Descrição: PLS - INCL.CTAS PAGAR-A CADA BMS OUTROS                                                                                 
+Lançamento Padrão: 9AN, Descrição: PLS - INCL.CTAS PAGAR-APÓS BMS                                                                                          
+Lançamento Padrão: 9AW, Descrição: PLS - BAIXA CTAS RECEBER-ANTES BM1                                                                                      
+Lançamento Padrão: 9AX, Descrição: PLS - BAIXA CTAS RECEBER-A CADA BM1                                                                                     
+Lançamento Padrão: 9B4, Descrição: PLS - BAIXA CTAS RECEBER-APÓS BM1                                                                                       
+Lançamento Padrão: 9B5, Descrição: PLS - CANCEL BX CTAS RECEBER-ANTES BM1                                                                                  
+Lançamento Padrão: 9B6, Descrição: PLS - CANCEL BX CTAS RECEBER-A CADA BM1                                                                                 
+Lançamento Padrão: 9BC, Descrição: PLS - CANCEL BX CTAS RECEBER-APÓS BM1                                                                                   
+Lançamento Padrão: 9BD, Descrição: PLS - BX CTAS PAGAR-ANTES DO BMS                                                                                        
+Lançamento Padrão: 9BE, Descrição: PLS - BX CTAS PAGAR-A CADA BMS DO BD7                                                                                   
+Lançamento Padrão: 9BF, Descrição: PLS - BX CTAS PAGAR-A CADA BMS DO BBC                                                                                   
+Lançamento Padrão: 9BG, Descrição: PLS - BX CTAS PAGAR-A CADA BMS DO BGQ                                                                                   
+Lançamento Padrão: 9BH, Descrição: PLS - BX CTAS PAGAR-A CADA BMS DO BCE                                                                                   
+Lançamento Padrão: 9BI, Descrição: PLS - BX CTAS PAGAR-A CADA BMR                                                                                          
+Lançamento Padrão: 9BJ, Descrição: PLS - BX CTAS PAGAR-A CADA BMS OUTROS                                                                                   
+Lançamento Padrão: 9BK, Descrição: PLS - BX CTAS PAGAR-APÓS BMS                                                                                            
+Lançamento Padrão: 9BL, Descrição: PLS - CANCEL BX CTAS PAGAR-ANTES BMS                                                                                    
+Lançamento Padrão: 9BM, Descrição: PLS - CANCEL BX CTAS PAGAR-CADA BMS/BD7                                                                                 
+Lançamento Padrão: 9BN, Descrição: PLS - CANCEL BX CTAS PAGAR-CADA BMS/BBC                                                                                 
+Lançamento Padrão: 9BO, Descrição: PLS - CANCEL BX CTAS PAGAR-CADA BMS/BGQ                                                                                 
+Lançamento Padrão: 9BP, Descrição: PLS - CANCEL BX CTAS PAGAR-CADA BMS/BCE                                                                                 
+Lançamento Padrão: 9BQ, Descrição: PLS - CANCEL BX CTAS PAGAR-A CADA BMR                                                                                   
+Lançamento Padrão: 9BR, Descrição: PLS - CANCEL BX CTAS PAGAR-CADA BMS/OUT                                                                                 
+Lançamento Padrão: 9BS, Descrição: PLS - CANCEL BX CTAS PAGAR-APÓS BMS                                                                                     
+Lançamento Padrão: 9BZ, Descrição: PLS - CONTABILIZAÇÃO DE GUIAS - BD5/BE4                                                                                 
+Lançamento Padrão: 9C0, Descrição: PLS - CONTABILIZAÇÃO DE GUIAS - BD6                                                                                     
+Lançamento Padrão: 9C1, Descrição: PLS - CONTABILIZAÇÃO DE GUIAS - BD7                                                                                     
+Lançamento Padrão: 9CU, Descrição: PLS - HISTÓRICO DE REVERSÃO - B3N                                                                                       
+Lançamento Padrão: 9CX, Descrição: PLS - PROVISÃO DE REEMBOLSO                                                                                             
+Lançamento Padrão: 9CY, Descrição: PLS - REVERSÃO DE REEMBOLSO                                                                                             
+Lançamento Padrão: 9CW, Descrição: Provisão dos recursos de glosa                                                                                          
+Lançamento Padrão: 9CZ, Descrição: Reversão dos recursos de glosa                                                                                          
+Lançamento Padrão: 9CL, Descrição: PLS - CONTABILIZAÇÃO DE GUIAS - BD5/BE4                                                                                 
+Lançamento Padrão: 9CM, Descrição: PLS - CONTABILIZAÇÃO DE GUIAS - BD6                                                                                     
+Lançamento Padrão: 9CN, Descrição: PLS - CONTABILIZAÇÃO GUIAS BD7- Provisão                                                                                
+Lançamento Padrão: 9CQ, Descrição: PLS - CONTABILIZAÇÃO GUIAS BD7- Reversão                                                                                
+Lançamento Padrão: 9CT, Descrição: PLS - CONTABILIZAÇÃO GUIAS BD7- Custos                                                                                  
+Lançamento Padrão: 9CV, Descrição: PLS - CONTABILIZAÇÃO GUIAS BD7- Reversão                                                                                
+Lançamento Padrão: 9D0, Descrição: JURI - Inclusão de valores de provisão                                                                                  
+Lançamento Padrão: 9D1, Descrição: JURI - Cancelamento de valores de provisão                                                                              
+Lançamento Padrão: 9D2, Descrição: JURI - Redução de valores de provisão                                                                                   
+Lançamento Padrão: 940, Descrição: PFS - Emissão de WO de Despesa                                                                                          
+Lançamento Padrão: 941, Descrição: PFS - Cancelamento de WO de Despesa                                                                                     
+Lançamento Padrão: 942, Descrição: PFS - Lançamento                                                                                                        
+Lançamento Padrão: 943, Descrição: PFS - Desdobramento Baixa                                                                                               
+Lançamento Padrão: 944, Descrição: PFS - Desdobramento pós pagamento                                                                                       
+Lançamento Padrão: 945, Descrição: PFS - Emissão de Fatura                                                                                                 
+Lançamento Padrão: 946, Descrição: PFS - Cancelamento de Fatura                                                                                            
+Lançamento Padrão: 947, Descrição: PFS - Inclusão Desdobramento                                                                                            
+Lançamento Padrão: 948, Descrição: PFS - Estorno de Inclusão de Desdobramento                                                                              
+Lançamento Padrão: 949, Descrição: PFS - Estorno de Desdobramento Pós Pagamento                                                                            
+Lançamento Padrão: 956, Descrição: PFS - Estorno Lançamento                                                                                                
+Lançamento Padrão: 957, Descrição: PFS - Estorno Desdobramento Baixa                                                                                       
+Lançamento Padrão: T00, Descrição: Turismo - Geração de IF - Venda Cliente (IV)                                                                            
+Lançamento Padrão: T01, Descrição: Turismo - Exclusão de IF - Venda Cliente (IV)                                                                           
+Lançamento Padrão: T02, Descrição: Turismo - Geração de IF - Venda Fornecedor (DR)                                                                         
+Lançamento Padrão: T03, Descrição: Turismo - Exclusão de IF - Venda Fornecedor (DR)                                                                        
+Lançamento Padrão: T04, Descrição: Turismo - Geração de IF - Receita Cliente (IV)                                                                          
+Lançamento Padrão: T05, Descrição: Turismo - Exclusão de IF - Receita Cliente (IV)                                                                         
+Lançamento Padrão: T06, Descrição: Turismo - Geração de IF - Receita Fornecedor (DR)                                                                       
+Lançamento Padrão: T07, Descrição: Turismo - Exclusão de IF - Receita Fornecedor (DR)                                                                      
+Lançamento Padrão: T08, Descrição: Turismo - Geração de IF - Reembolso Cliente(IV)                                                                         
+Lançamento Padrão: T09, Descrição: Turismo - Exclusão de IF - Reembolso Cliente(IV)                                                                        
+Lançamento Padrão: T10, Descrição: Turismo - Geração de IF - Reembolso Fornecedor (DR)                                                                     
+Lançamento Padrão: T11, Descrição: Turismo - Exclusão de IF - Reembolso Fornecedor (DR)                                                                    
+Lançamento Padrão: T12, Descrição: Turismo - Geração de IF - Abat.Receita Cliente (Acordos)                                                                
+Lançamento Padrão: T13, Descrição: Turismo - Exclusão de IF - Abat.Receita Cliente (Acordos)                                                               
+Lançamento Padrão: T14, Descrição: Turismo - Geração de IF - Abat.Receita Fornecedor (Acordos)                                                             
+Lançamento Padrão: T15, Descrição: Turismo - Exclusão de IF - Abat.Receita Fornecedor (Acordos)                                                            
+Lançamento Padrão: T20, Descrição: Turismo - Finalização de IF - Faturamento de Venda                                                                      
+Lançamento Padrão: T21, Descrição: Turismo - Estorno de IF - Faturamento de Venda                                                                          
+Lançamento Padrão: T22, Descrição: Turismo - Finalização de IF - Faturamento de Reembolso de Venda                                                         
+Lançamento Padrão: T23, Descrição: Turismo - Estorno de IF - Faturamento de Reembolso de Venda                                                             
+Lançamento Padrão: T24, Descrição: Turismo - Finalização de IF - Faturamento de Receita                                                                    
+Lançamento Padrão: T25, Descrição: Turismo - Estorno de IF - Faturamento de Receita                                                                        
+Lançamento Padrão: T26, Descrição: Turismo - Finalização de IF - Faturamento de Abat. Receita                                                              
+Lançamento Padrão: T27, Descrição: Turismo - Estorno de IF - Faturamento de Abat. Receita                                                                  
+Lançamento Padrão: T28, Descrição: Turismo - Finalização de IF - Faturamento Breakage                                                                      
+Lançamento Padrão: T29, Descrição: Turismo - Estorno de IF - Faturamento Breakage                                                                          
+Lançamento Padrão: T30, Descrição: Turismo - Finalização de IF  Confirmação da Venda                                                                      
+Lançamento Padrão: T31, Descrição: Turismo - Estorno de IF  Confirmação da Venda                                                                          
+Lançamento Padrão: T32, Descrição: Turismo - Finalização de IF  Confirmação do Reembolso da Venda                                                         
+Lançamento Padrão: T33, Descrição: Turismo - Estorno de IF  Confirmação do Reembolso da Venda                                                             
+Lançamento Padrão: T34, Descrição: Turismo - Finalização de IF  Confirmação da Receita                                                                    
+Lançamento Padrão: T35, Descrição: Turismo - Estorno de IF  Confirmação da Receita                                                                        
+Lançamento Padrão: T36, Descrição: Turismo - Finalização de IF  Confirmação do Abat.Receita                                                               
+Lançamento Padrão: T37, Descrição: Turismo - Estorno de IF  Confirmação do Abat.Receita                                                                   
+Lançamento Padrão: T40, Descrição: Turismo - Geração de IF  Receita (Apuração)                                                                            
+Lançamento Padrão: T41, Descrição: Turismo - Exclusão de IF  Receita (Apuração)                                                                           
+Lançamento Padrão: T42, Descrição: Turismo - Geração de IF  Abat.Receita (Apuração)                                                                       
+Lançamento Padrão: T43, Descrição: Turismo - Exclusão de IF  Abat.Receita (Apuração)                                                                      
+Lançamento Padrão: T44, Descrição: Turismo - Geração de IF  Apuração-Total                                                                                
+Lançamento Padrão: T45, Descrição: Turismo - Exclusão de IF  Apuração - Total                                                                             
+Lançamento Padrão: T50, Descrição: Turismo - Efetivação da Conciliação                                                                                     
+Lançamento Padrão: T51, Descrição: Turismo - Estorno da Efetivação da Conciliação                                                                          
+Lançamento Padrão: 690, Descrição: Caucionamento - Inclusão de cauções                                                                                     

@@ -1,0 +1,57 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "totvs_language_debug",
+			"request": "launch",
+			"name": "Totvs Language Debug",
+			"program": "${command:AskForProgramName}",
+			"cwb": "${workspaceFolder}",
+			"smartclientBin": "D:/profissional/totvs/ambiente_windows/Protheus/bin/smartclient/smartclient.exe",
+			"isMultiSession": true,
+			"enableTableSync": true
+		}
+	],
+	"lastPrograms": [
+		{
+			"args": [],
+			"label": "S",
+			"description": ""
+		},
+		{
+			"args": [
+				"()"
+			],
+			"label": "U_SPEXPALL",
+			"description": "()"
+		},
+		{
+			"args": [
+				" ()"
+			],
+			"label": "U_SPEXPALL",
+			"description": " ()"
+		},
+		{
+			"args": [],
+			"label": "U_SPEXPALL",
+			"description": ""
+		},
+		{
+			"args": [],
+			"label": "SIGAMDI",
+			"description": ""
+		},
+		{
+			"args": [],
+			"label": "SIGAcfg",
+			"description": ""
+		},
+		{
+			"args": [],
+			"label": "sigafat",
+			"description": ""
+		}
+	],
+	"lastProgramExecuted": "SIGAcfg"
+}

@@ -1,0 +1,50 @@
+<po-page-default [p-title]="title">
+  <po-dynamic-form #dynamicForm [p-fields]="fields" [p-value]="supplierValues">
+  </po-dynamic-form>
+
+  <div class="thf-row">
+    <po-button class="thf-md-3" 
+    *ngIf="!this.supplierId" 
+    p-label="Inserir" 
+    (p-click)="insertSupplier()">
+    </po-button>
+  </div>
+
+  <po-button 
+    *ngIf="this.supplierId" 
+    class="thf-md-3" 
+    p-label="Atualizar Fornecedor" 
+    (p-click)="updateSupplier()">
+  </po-button>
+
+</po-page-default>
+
+
+<!--
+<po-page-default [p-title]="title">
+    <po-dynamic-form #dynamicForm
+      [p-fields]="fields"
+      [p-value]="supplierValues">
+    </po-dynamic-form>
+  
+   
+  </po-page-default>
+
+
+       <div class="thf-row">
+      <po-button
+        class="thf-md-3"
+        *ngIf="!this.supplierId"
+        p-label="Inserir"
+        [p-disabled]="dynamicForm?.form.invalid"
+        (p-click)="insertSupplier()">
+      </po-button>
+  
+      <po-button
+        *ngIf="this.supplierId"
+        class="thf-md-3"
+        p-label="Atualizar"
+        (p-click)="updateSupplier()">
+      </po-button>
+    </div>
+  -->
