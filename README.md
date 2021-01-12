@@ -6,7 +6,6 @@ _Neste repositório você encontrará projetos open-source em linguagem advpl, t
 
 ____  
 
-
 Descrição
 ----
 
