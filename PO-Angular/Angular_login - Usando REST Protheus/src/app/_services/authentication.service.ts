@@ -24,7 +24,7 @@ export class AuthenticationService {
 
     login(username: string, password: string) {
         console.log(environment.apiERP);
-        let parampost = '?grant_type=password&password='+username+'&username='+password;
+        let parampost = '?grant_type=password&password='+password+'&username='+username;
         return this.http.post<any>(`${environment.apiERP}`+this.urlpost+parampost, { username, password })
             .pipe(map(token => {
                 // store user details and jwt token in local storage to keep user logged in between page refreshes
