@@ -5,9 +5,9 @@
 #Define ENTER Chr(13)+Chr(10)
 
 /*/{Protheus.doc} SPFLDPOS
-Fun√ß√£o SPFLDPOS, para exemplificar o uso da fun√ß√£o FieldPos().
-@param N√£o recebe par√¢metros
-@return N√£o retorna nada
+funÁ„o SPFLDPOS, para exemplificar o uso da funÁ„o FieldPos().
+@param N„o recebe par‚metros
+@return N„o retorna nada
 @author Rafael Goncalves
 @owner sempreju.com.br
 @version Protheus 12

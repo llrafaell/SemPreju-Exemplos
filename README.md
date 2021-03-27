@@ -38,6 +38,7 @@ FOLDER - ADVPL\Exemplos\
    * **SPCHAVIN.prw**: Aprenda como usar a função GetPvProfString para buscar informações do appserver.ini e smartclient.ini
    * **SPEXISTG.prw**: Aprenda como usar a função ExistTrigger para consultar se determinado campo possui gatilho.
    * **SPEXCTG.prw**: Aprenda como usar a função RunTrigger para executar os gatihlos de um determinado campo.
+   * **SPSF3DIA.prw**: Aprenda como usar a cGetfile no SF3 de um campo.
    
 FOLDER - ADVPL\Exemplos\Ponto de entrada
    * **AfterLogin.prw**: PE chamado após login ou abertura de telas se acesso em MDI.
