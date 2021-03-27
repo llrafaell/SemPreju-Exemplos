@@ -26,12 +26,12 @@ cSecao := "General" //vamos ser os parametros da se√ß√£o [General]
 cChave := "InstallPath" //qual chave queremos retornar o valor
 cPadrao := "NaoEncontrado" //se nao encontrar esse √© o valor padrao a ser retornado
 
-cMensagem := "Arquivo de configura√ß√£o do servidor: [" + cServerIni + "]" + CRLF
-cMensagem += "  Se√ß√£o [" + cSecao + "] Chave [" + cChave + "] Valor [" + ;
+cMensagem := "Arquivo de configurÁ„o do servidor: [" + cServerIni + "]" + CRLF
+cMensagem += "  SeÁ„o [" + cSecao + "] Chave [" + cChave + "] Valor [" + ;
 GetPvProfString(cSecao, cChave, cPadrao, cServerIni) + "]" + CRLF+ CRLF+ CRLF
 
-cMensagem += "Arquivo de configura√ß√£o da esta√ß√£o: [" + cClientIni + "]" + CRLF
-cMensagem += "  Se√ß√£o [" + cSecao + "] Chave [" + cChave + "] Valor [" + ;
+cMensagem += "Arquivo de configurÁ„o da estaÁ„o: [" + cClientIni + "]" + CRLF
+cMensagem += "  SeÁ„o [" + cSecao + "] Chave [" + cChave + "] Valor [" + ;
 GetPvProfString(cSecao, cChave, cPadrao, cClientIni) + "]" + CRLF
 //+----------------------------------------------------------------------------+
 //|Apresenta uma mensagem com os resultados obtidos                            |
@@ -39,15 +39,15 @@ GetPvProfString(cSecao, cChave, cPadrao, cClientIni) + "]" + CRLF
 MsgInfo(cMensagem, "Exemplo do GetPvProfString")
 
 
-//√© possivel assim criarmos uma chave customizada e usar ela em nossos fontes, como abaixo
+//È possivel assim criarmos uma chave customizada e usar ela em nossos fontes, como abaixo
 
 
-cSecao := "SEMPREJU" //vamos ser os parametros da se√ß√£o [SEMPREJU]
+cSecao := "SEMPREJU" //vamos ser os parametros da SeÁ„o [SEMPREJU]
 cChave := "url" //qual chave queremos retornar o valor
-cPadrao := "URL N√£o encontrada" //se nao encontrar esse √© o valor padrao a ser retornado
+cPadrao := "URL n„o encontrada" //se nao encontrar esse √© o valor padrao a ser retornado
 
-cMensagem := "Arquivo de configura√ß√£o do servidor: [" + cServerIni + "]" + CRLF
-cMensagem += "  Se√ß√£o [" + cSecao + "] Chave [" + cChave + "] Valor [" + ;
+cMensagem := "Arquivo de configurÁ„o do servidor: [" + cServerIni + "]" + CRLF
+cMensagem += "  SeÁ„o [" + cSecao + "] Chave [" + cChave + "] Valor [" + ;
 GetPvProfString(cSecao, cChave, cPadrao, cServerIni) + "]" + CRLF+ CRLF+ CRLF
 //+----------------------------------------------------------------------------+
 //|Apresenta uma mensagem com os resultados obtidos                            |
