@@ -39,6 +39,7 @@ FOLDER - ADVPL\Exemplos\
    * **SPEXISTG.prw**: Aprenda como usar a função ExistTrigger para consultar se determinado campo possui gatilho.
    * **SPEXCTG.prw**: Aprenda como usar a função RunTrigger para executar os gatihlos de um determinado campo.
    * **SPSF3DIA.prw**: Aprenda como usar a cGetfile no SF3 de um campo.
+   * **SPDTVAL.prw**: Aprenda como verificar se uma data é dia util (obs.: feriados devem ser cadastrados na tabela genérica 63).
    
 FOLDER - ADVPL\Exemplos\Ponto de entrada
    * **AfterLogin.prw**: PE chamado após login ou abertura de telas se acesso em MDI.
