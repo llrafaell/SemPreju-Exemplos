@@ -37,7 +37,7 @@ FOLDER - ADVPL\Exemplos\
    * **SPWEBENG.prw**: Exemplo como usar a classe TWebEngine para abrir página dentro do protheus.
    * **SPCHAVIN.prw**: Aprenda como usar a função GetPvProfString para buscar informações do appserver.ini e smartclient.ini
    * **SPEXISTG.prw**: Aprenda como usar a função ExistTrigger para consultar se determinado campo possui gatilho.
-   * **SPEXCTG.prw**: Aprenda como usar a função RunTrigger para executar os gatihlos de um determinado campo.
+   * **SPEXCTG.prw**:  Aprenda como usar a função RunTrigger para executar os gatihlos de um determinado campo.
    * **SPSF3DIA.prw**: Aprenda como usar a cGetfile no SF3 de um campo.
    * **SPDTVAL.prw**: Aprenda como verificar se uma data é dia util (obs.: feriados devem ser cadastrados na tabela genérica 63).
    
